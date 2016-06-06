@@ -477,7 +477,7 @@ class Job
      */
     public function setCreatedAtValue()
     {
-        if(!this->getCreatedAt())
+        if(!$this->getCreatedAt())
 		{
 			$this->created_at = new \DateTime();
 		}
