@@ -1,0 +1,62 @@
+<?php
+
+/* @Twig/Exception/error.txt.twig */
+class __TwigTemplate_d6d798d657b8eb02813135615eadd283341121eb6896fe87221811da1d66c7a1 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = false;
+
+        $this->blocks = array(
+        );
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $__internal_57d97a826393cf8d02763086d43ac3aae72854675144be22f67cf0e0f67de673 = $this->env->getExtension("native_profiler");
+        $__internal_57d97a826393cf8d02763086d43ac3aae72854675144be22f67cf0e0f67de673->enter($__internal_57d97a826393cf8d02763086d43ac3aae72854675144be22f67cf0e0f67de673_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/error.txt.twig"));
+
+        // line 1
+        echo "Oops! An Error Occurred
+=======================
+
+The server returned a \"";
+        // line 4
+        echo (isset($context["status_code"]) ? $context["status_code"] : $this->getContext($context, "status_code"));
+        echo " ";
+        echo (isset($context["status_text"]) ? $context["status_text"] : $this->getContext($context, "status_text"));
+        echo "\".
+
+Something is broken. Please let us know what you were doing when this error occurred.
+We will fix it as soon as possible. Sorry for any inconvenience caused.
+";
+        
+        $__internal_57d97a826393cf8d02763086d43ac3aae72854675144be22f67cf0e0f67de673->leave($__internal_57d97a826393cf8d02763086d43ac3aae72854675144be22f67cf0e0f67de673_prof);
+
+    }
+
+    public function getTemplateName()
+    {
+        return "@Twig/Exception/error.txt.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  27 => 4,  22 => 1,);
+    }
+}
+/* Oops! An Error Occurred*/
+/* =======================*/
+/* */
+/* The server returned a "{{ status_code }} {{ status_text }}".*/
+/* */
+/* Something is broken. Please let us know what you were doing when this error occurred.*/
+/* We will fix it as soon as possible. Sorry for any inconvenience caused.*/
+/* */

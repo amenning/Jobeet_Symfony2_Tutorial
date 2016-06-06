@@ -81,4 +81,8 @@
   'EnsJobeetBundle:Default:index.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\src\\Ens\\JobeetBundle/Resources/views/Default/index.html.twig',
   '::base.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/base.html.twig',
   ':default:index.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/default/index.html.twig',
+  ':job:edit.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/job/edit.html.twig',
+  ':job:index.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/job/index.html.twig',
+  ':job:new.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/job/new.html.twig',
+  ':job:show.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/job/show.html.twig',
 );
