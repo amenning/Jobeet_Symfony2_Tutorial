@@ -173,7 +173,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return $this->redirect($pathinfo.'/', 'ens_jobeet_homepage');
             }
 
-            return array (  '_controller' => 'Ens\\JobeetBundle\\Controller\\DefaultController::indexAction',  '_route' => 'ens_jobeet_homepage',);
+            return array (  '_controller' => 'Ens\\JobeetBundle\\Controller\\JobController::indexAction',  '_route' => 'ens_jobeet_homepage',);
         }
 
         // homepage
