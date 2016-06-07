@@ -22,8 +22,8 @@ class __TwigTemplate_b4eaba6164f945ac87560cf207ae7b9501b2d4f2a9d9dbc897a2ca996d7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f16ad9f8dfb9e120601f1b98df8f9b4ed49dd25dd0ddccb5389aa7d232a4182a = $this->env->getExtension("native_profiler");
-        $__internal_f16ad9f8dfb9e120601f1b98df8f9b4ed49dd25dd0ddccb5389aa7d232a4182a->enter($__internal_f16ad9f8dfb9e120601f1b98df8f9b4ed49dd25dd0ddccb5389aa7d232a4182a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/info.html.twig"));
+        $__internal_d9d92a2eaa0dff02187d6c83aec4f6fc0e508399bc0c26f81b4ea83fd720eb04 = $this->env->getExtension("native_profiler");
+        $__internal_d9d92a2eaa0dff02187d6c83aec4f6fc0e508399bc0c26f81b4ea83fd720eb04->enter($__internal_d9d92a2eaa0dff02187d6c83aec4f6fc0e508399bc0c26f81b4ea83fd720eb04_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/info.html.twig"));
 
         // line 3
         $context["messages"] = array("purge" => array("status" => "success", "title" => "The profiler database was purged successfully", "message" => "Now you need to browse some pages with the Symfony Profiler enabled to collect data."), "no_token" => array("status" => "error", "title" => (((((        // line 11
@@ -32,15 +32,15 @@ array_key_exists("token", $context)) ? (_twig_default_filter((isset($context["to
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f16ad9f8dfb9e120601f1b98df8f9b4ed49dd25dd0ddccb5389aa7d232a4182a->leave($__internal_f16ad9f8dfb9e120601f1b98df8f9b4ed49dd25dd0ddccb5389aa7d232a4182a_prof);
+        $__internal_d9d92a2eaa0dff02187d6c83aec4f6fc0e508399bc0c26f81b4ea83fd720eb04->leave($__internal_d9d92a2eaa0dff02187d6c83aec4f6fc0e508399bc0c26f81b4ea83fd720eb04_prof);
 
     }
 
     // line 26
     public function block_summary($context, array $blocks = array())
     {
-        $__internal_3b7a5ef1528bbf53f8c0cdd1eee920d410f943fef6dec160cb9b5b92e6dd5bbf = $this->env->getExtension("native_profiler");
-        $__internal_3b7a5ef1528bbf53f8c0cdd1eee920d410f943fef6dec160cb9b5b92e6dd5bbf->enter($__internal_3b7a5ef1528bbf53f8c0cdd1eee920d410f943fef6dec160cb9b5b92e6dd5bbf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "summary"));
+        $__internal_9a9782f084c6412b86f8377fb73e34e8c61b58a8192c34a6a0ac0d2d4bc78983 = $this->env->getExtension("native_profiler");
+        $__internal_9a9782f084c6412b86f8377fb73e34e8c61b58a8192c34a6a0ac0d2d4bc78983->enter($__internal_9a9782f084c6412b86f8377fb73e34e8c61b58a8192c34a6a0ac0d2d4bc78983_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "summary"));
 
         // line 27
         echo "    <div class=\"status status-";
@@ -55,15 +55,15 @@ array_key_exists("token", $context)) ? (_twig_default_filter((isset($context["to
     </div>
 ";
         
-        $__internal_3b7a5ef1528bbf53f8c0cdd1eee920d410f943fef6dec160cb9b5b92e6dd5bbf->leave($__internal_3b7a5ef1528bbf53f8c0cdd1eee920d410f943fef6dec160cb9b5b92e6dd5bbf_prof);
+        $__internal_9a9782f084c6412b86f8377fb73e34e8c61b58a8192c34a6a0ac0d2d4bc78983->leave($__internal_9a9782f084c6412b86f8377fb73e34e8c61b58a8192c34a6a0ac0d2d4bc78983_prof);
 
     }
 
     // line 34
     public function block_panel($context, array $blocks = array())
     {
-        $__internal_50e0d35337812383799c152e2dbc416c6b09956a291a1926c713448e3a01abda = $this->env->getExtension("native_profiler");
-        $__internal_50e0d35337812383799c152e2dbc416c6b09956a291a1926c713448e3a01abda->enter($__internal_50e0d35337812383799c152e2dbc416c6b09956a291a1926c713448e3a01abda_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "panel"));
+        $__internal_c9b0d16815fac06dd124b107d4c7121900622de9c75a5e5fc5fc3f59fea09db0 = $this->env->getExtension("native_profiler");
+        $__internal_c9b0d16815fac06dd124b107d4c7121900622de9c75a5e5fc5fc3f59fea09db0->enter($__internal_c9b0d16815fac06dd124b107d4c7121900622de9c75a5e5fc5fc3f59fea09db0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "panel"));
 
         // line 35
         echo "    <h2>";
@@ -75,7 +75,7 @@ array_key_exists("token", $context)) ? (_twig_default_filter((isset($context["to
         echo "</p>
 ";
         
-        $__internal_50e0d35337812383799c152e2dbc416c6b09956a291a1926c713448e3a01abda->leave($__internal_50e0d35337812383799c152e2dbc416c6b09956a291a1926c713448e3a01abda_prof);
+        $__internal_c9b0d16815fac06dd124b107d4c7121900622de9c75a5e5fc5fc3f59fea09db0->leave($__internal_c9b0d16815fac06dd124b107d4c7121900622de9c75a5e5fc5fc3f59fea09db0_prof);
 
     }
 
