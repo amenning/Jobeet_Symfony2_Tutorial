@@ -12,91 +12,195 @@ class __TwigTemplate_3c7c0f9dba0efffe9bfa4a8d04b09769c8ce1b0f37ddc8df317c0b0faf9
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'stylesheets' => array($this, 'block_stylesheets'),
-            'body' => array($this, 'block_body'),
             'javascripts' => array($this, 'block_javascripts'),
+            'body' => array($this, 'block_body'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_35b101ef6c78758d97876dc4474428b164d03adee5aa4246eeeddf7245f3e5c3 = $this->env->getExtension("native_profiler");
-        $__internal_35b101ef6c78758d97876dc4474428b164d03adee5aa4246eeeddf7245f3e5c3->enter($__internal_35b101ef6c78758d97876dc4474428b164d03adee5aa4246eeeddf7245f3e5c3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_7414543aba5bb121f1857578a69dc72a3efb5b262a34253283bdd580d64e2354 = $this->env->getExtension("native_profiler");
+        $__internal_7414543aba5bb121f1857578a69dc72a3efb5b262a34253283bdd580d64e2354->enter($__internal_7414543aba5bb121f1857578a69dc72a3efb5b262a34253283bdd580d64e2354_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
 <html>
     <head>
-        <meta charset=\"UTF-8\" />
-        <title>";
-        // line 5
-        $this->displayBlock('title', $context, $blocks);
-        echo "</title>
-        ";
+        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
+        <title>
+      \t\t";
         // line 6
-        $this->displayBlock('stylesheets', $context, $blocks);
-        // line 7
-        echo "        <link rel=\"icon\" type=\"image/x-icon\" href=\"";
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("favicon.ico"), "html", null, true);
-        echo "\" />
-    </head>
-    <body>
+        $this->displayBlock('title', $context, $blocks);
+        // line 9
+        echo "    \t</title>
         ";
         // line 10
-        $this->displayBlock('body', $context, $blocks);
-        // line 11
+        $this->displayBlock('stylesheets', $context, $blocks);
+        // line 13
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 12
-        echo "    </body>
-</html>
-";
+        // line 14
+        echo "        <link rel=\"shortcut icon\" href=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/images/favicon.ico"), "html", null, true);
+        echo "\" />
+    </head>
+  <body>
+    <div id=\"container\">
+      <div id=\"header\">
+        <div class=\"content\">
+          <h1><a href=\"";
+        // line 20
+        echo $this->env->getExtension('routing')->getPath("ens_job_index");
+        echo "\">
+            <img src=\"";
+        // line 21
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/images/logo.jpg"), "html", null, true);
+        echo "\" alt=\"Jobeet Job Board\" />
+          </a></h1>
+ 
+          <div id=\"sub_header\">
+            <div class=\"post\">
+              <h2>Ask for people</h2>
+              <div>
+                <a href=\"";
+        // line 28
+        echo $this->env->getExtension('routing')->getPath("ens_job_new");
+        echo "\">Post a Job</a>
+              </div>
+            </div>
+ 
+            <div class=\"search\">
+              <h2>Ask for a job</h2>
+              <form action=\"\" method=\"get\">
+                <input type=\"text\" name=\"keywords\" id=\"search_keywords\" />
+                <input type=\"submit\" value=\"search\" />
+                <div class=\"help\">
+                  Enter some keywords (city, country, position, ...)
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div id=\"content\">
+        ";
+        // line 47
+        if ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "hasFlash", array(0 => "notice"), "method")) {
+            // line 48
+            echo "          <div class=\"flash_notice\">
+            ";
+            // line 49
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "flash", array(0 => "notice"), "method"), "html", null, true);
+            echo "
+          </div>
+        ";
+        }
+        // line 52
+        echo " 
+        ";
+        // line 53
+        if ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "hasFlash", array(0 => "error"), "method")) {
+            // line 54
+            echo "          <div class=\"flash_error\">
+            ";
+            // line 55
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "session", array()), "flash", array(0 => "error"), "method"), "html", null, true);
+            echo "
+          </div>
+        ";
+        }
+        // line 58
+        echo " 
+        <div class=\"content\">
+            ";
+        // line 60
+        $this->displayBlock('body', $context, $blocks);
+        // line 62
+        echo "        </div>
+      </div>
+ 
+      <div id=\"footer\">
+        <div class=\"content\">
+          <span class=\"symfony\">
+            <img src=\"";
+        // line 68
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/images/jobeet-mini.png"), "html", null, true);
+        echo "\" />
+            powered by <a href=\"http://www.symfony.com/\">
+              <img src=\"";
+        // line 70
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/images/symfony.gif"), "html", null, true);
+        echo "\" alt=\"symfony framework\" />
+            </a>
+          </span>
+          <ul>
+            <li><a href=\"\">About Jobeet</a></li>
+            <li class=\"feed\"><a href=\"\">Full feed</a></li>
+            <li><a href=\"\">Jobeet API</a></li>
+            <li class=\"last\"><a href=\"\">Affiliates</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>";
         
-        $__internal_35b101ef6c78758d97876dc4474428b164d03adee5aa4246eeeddf7245f3e5c3->leave($__internal_35b101ef6c78758d97876dc4474428b164d03adee5aa4246eeeddf7245f3e5c3_prof);
-
-    }
-
-    // line 5
-    public function block_title($context, array $blocks = array())
-    {
-        $__internal_bec9ef6d09d948341476ec9bff0ef8fb81bb4e2a1249ad6de2d918e5f2b1ebf2 = $this->env->getExtension("native_profiler");
-        $__internal_bec9ef6d09d948341476ec9bff0ef8fb81bb4e2a1249ad6de2d918e5f2b1ebf2->enter($__internal_bec9ef6d09d948341476ec9bff0ef8fb81bb4e2a1249ad6de2d918e5f2b1ebf2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
-
-        echo "Welcome!";
-        
-        $__internal_bec9ef6d09d948341476ec9bff0ef8fb81bb4e2a1249ad6de2d918e5f2b1ebf2->leave($__internal_bec9ef6d09d948341476ec9bff0ef8fb81bb4e2a1249ad6de2d918e5f2b1ebf2_prof);
+        $__internal_7414543aba5bb121f1857578a69dc72a3efb5b262a34253283bdd580d64e2354->leave($__internal_7414543aba5bb121f1857578a69dc72a3efb5b262a34253283bdd580d64e2354_prof);
 
     }
 
     // line 6
-    public function block_stylesheets($context, array $blocks = array())
+    public function block_title($context, array $blocks = array())
     {
-        $__internal_d74a3c96d79edad429de3b99fbf28e21e31975febe783b76eee4acf005a17e87 = $this->env->getExtension("native_profiler");
-        $__internal_d74a3c96d79edad429de3b99fbf28e21e31975febe783b76eee4acf005a17e87->enter($__internal_d74a3c96d79edad429de3b99fbf28e21e31975febe783b76eee4acf005a17e87_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_adda9856a86f7d9276b632b58b40f07be76c2b1d8db86384ea2fa4316aa3d1d9 = $this->env->getExtension("native_profiler");
+        $__internal_adda9856a86f7d9276b632b58b40f07be76c2b1d8db86384ea2fa4316aa3d1d9->enter($__internal_adda9856a86f7d9276b632b58b40f07be76c2b1d8db86384ea2fa4316aa3d1d9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
+        // line 7
+        echo "        \t\tJobeet - Your best job board
+      \t\t";
         
-        $__internal_d74a3c96d79edad429de3b99fbf28e21e31975febe783b76eee4acf005a17e87->leave($__internal_d74a3c96d79edad429de3b99fbf28e21e31975febe783b76eee4acf005a17e87_prof);
+        $__internal_adda9856a86f7d9276b632b58b40f07be76c2b1d8db86384ea2fa4316aa3d1d9->leave($__internal_adda9856a86f7d9276b632b58b40f07be76c2b1d8db86384ea2fa4316aa3d1d9_prof);
 
     }
 
     // line 10
-    public function block_body($context, array $blocks = array())
+    public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_42795e2ef56f3798131b8f4613ef1019cf412957c506c74a4e21c98a1eaece13 = $this->env->getExtension("native_profiler");
-        $__internal_42795e2ef56f3798131b8f4613ef1019cf412957c506c74a4e21c98a1eaece13->enter($__internal_42795e2ef56f3798131b8f4613ef1019cf412957c506c74a4e21c98a1eaece13_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4555816de263d45506942ebdc32e86852cef08a7b1ce6dc8f111ee6eb287557d = $this->env->getExtension("native_profiler");
+        $__internal_4555816de263d45506942ebdc32e86852cef08a7b1ce6dc8f111ee6eb287557d->enter($__internal_4555816de263d45506942ebdc32e86852cef08a7b1ce6dc8f111ee6eb287557d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
+        // line 11
+        echo "      \t\t<link rel=\"stylesheet\" href=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/css/main.css"), "html", null, true);
+        echo "\" type=\"text/css\" media=\"all\" />
+    \t";
         
-        $__internal_42795e2ef56f3798131b8f4613ef1019cf412957c506c74a4e21c98a1eaece13->leave($__internal_42795e2ef56f3798131b8f4613ef1019cf412957c506c74a4e21c98a1eaece13_prof);
+        $__internal_4555816de263d45506942ebdc32e86852cef08a7b1ce6dc8f111ee6eb287557d->leave($__internal_4555816de263d45506942ebdc32e86852cef08a7b1ce6dc8f111ee6eb287557d_prof);
 
     }
 
-    // line 11
+    // line 13
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_5aac8f047a21206cda45e131a837be700108a927ed1561eb4784505a2d16bd06 = $this->env->getExtension("native_profiler");
-        $__internal_5aac8f047a21206cda45e131a837be700108a927ed1561eb4784505a2d16bd06->enter($__internal_5aac8f047a21206cda45e131a837be700108a927ed1561eb4784505a2d16bd06_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_1cbac234b32cb361e78a5ed41fae13f87f9945cdc9389631ef779420abde0216 = $this->env->getExtension("native_profiler");
+        $__internal_1cbac234b32cb361e78a5ed41fae13f87f9945cdc9389631ef779420abde0216->enter($__internal_1cbac234b32cb361e78a5ed41fae13f87f9945cdc9389631ef779420abde0216_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         
-        $__internal_5aac8f047a21206cda45e131a837be700108a927ed1561eb4784505a2d16bd06->leave($__internal_5aac8f047a21206cda45e131a837be700108a927ed1561eb4784505a2d16bd06_prof);
+        $__internal_1cbac234b32cb361e78a5ed41fae13f87f9945cdc9389631ef779420abde0216->leave($__internal_1cbac234b32cb361e78a5ed41fae13f87f9945cdc9389631ef779420abde0216_prof);
+
+    }
+
+    // line 60
+    public function block_body($context, array $blocks = array())
+    {
+        $__internal_baec3ac126e979ed26e554b7c5102d9c3dd1e20b5a3158cd7e3a372dd70a25fc = $this->env->getExtension("native_profiler");
+        $__internal_baec3ac126e979ed26e554b7c5102d9c3dd1e20b5a3158cd7e3a372dd70a25fc->enter($__internal_baec3ac126e979ed26e554b7c5102d9c3dd1e20b5a3158cd7e3a372dd70a25fc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+
+        // line 61
+        echo "            ";
+        
+        $__internal_baec3ac126e979ed26e554b7c5102d9c3dd1e20b5a3158cd7e3a372dd70a25fc->leave($__internal_baec3ac126e979ed26e554b7c5102d9c3dd1e20b5a3158cd7e3a372dd70a25fc_prof);
 
     }
 
@@ -112,20 +216,89 @@ class __TwigTemplate_3c7c0f9dba0efffe9bfa4a8d04b09769c8ce1b0f37ddc8df317c0b0faf9
 
     public function getDebugInfo()
     {
-        return array (  93 => 11,  82 => 10,  71 => 6,  59 => 5,  50 => 12,  47 => 11,  45 => 10,  38 => 7,  36 => 6,  32 => 5,  26 => 1,);
+        return array (  201 => 61,  195 => 60,  184 => 13,  174 => 11,  168 => 10,  160 => 7,  154 => 6,  133 => 70,  128 => 68,  120 => 62,  118 => 60,  114 => 58,  108 => 55,  105 => 54,  103 => 53,  100 => 52,  94 => 49,  91 => 48,  89 => 47,  67 => 28,  57 => 21,  53 => 20,  43 => 14,  40 => 13,  38 => 10,  35 => 9,  33 => 6,  26 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
 /* <html>*/
 /*     <head>*/
-/*         <meta charset="UTF-8" />*/
-/*         <title>{% block title %}Welcome!{% endblock %}</title>*/
-/*         {% block stylesheets %}{% endblock %}*/
-/*         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />*/
-/*     </head>*/
-/*     <body>*/
-/*         {% block body %}{% endblock %}*/
+/*         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />*/
+/*         <title>*/
+/*       		{% block title %}*/
+/*         		Jobeet - Your best job board*/
+/*       		{% endblock %}*/
+/*     	</title>*/
+/*         {% block stylesheets %}*/
+/*       		<link rel="stylesheet" href="{{ asset('bundles/ensjobeet/css/main.css') }}" type="text/css" media="all" />*/
+/*     	{% endblock %}*/
 /*         {% block javascripts %}{% endblock %}*/
-/*     </body>*/
+/*         <link rel="shortcut icon" href="{{ asset('bundles/ensjobeet/images/favicon.ico') }}" />*/
+/*     </head>*/
+/*   <body>*/
+/*     <div id="container">*/
+/*       <div id="header">*/
+/*         <div class="content">*/
+/*           <h1><a href="{{ path('ens_job_index') }}">*/
+/*             <img src="{{ asset('bundles/ensjobeet/images/logo.jpg') }}" alt="Jobeet Job Board" />*/
+/*           </a></h1>*/
+/*  */
+/*           <div id="sub_header">*/
+/*             <div class="post">*/
+/*               <h2>Ask for people</h2>*/
+/*               <div>*/
+/*                 <a href="{{ path('ens_job_new') }}">Post a Job</a>*/
+/*               </div>*/
+/*             </div>*/
+/*  */
+/*             <div class="search">*/
+/*               <h2>Ask for a job</h2>*/
+/*               <form action="" method="get">*/
+/*                 <input type="text" name="keywords" id="search_keywords" />*/
+/*                 <input type="submit" value="search" />*/
+/*                 <div class="help">*/
+/*                   Enter some keywords (city, country, position, ...)*/
+/*                 </div>*/
+/*               </form>*/
+/*             </div>*/
+/*           </div>*/
+/*         </div>*/
+/*       </div>*/
+/*  */
+/*       <div id="content">*/
+/*         {% if app.session.hasFlash('notice') %}*/
+/*           <div class="flash_notice">*/
+/*             {{ app.session.flash('notice') }}*/
+/*           </div>*/
+/*         {% endif %}*/
+/*  */
+/*         {% if app.session.hasFlash('error') %}*/
+/*           <div class="flash_error">*/
+/*             {{ app.session.flash('error') }}*/
+/*           </div>*/
+/*         {% endif %}*/
+/*  */
+/*         <div class="content">*/
+/*             {% block body %}*/
+/*             {% endblock %}*/
+/*         </div>*/
+/*       </div>*/
+/*  */
+/*       <div id="footer">*/
+/*         <div class="content">*/
+/*           <span class="symfony">*/
+/*             <img src="{{ asset('bundles/ensjobeet/images/jobeet-mini.png') }}" />*/
+/*             powered by <a href="http://www.symfony.com/">*/
+/*               <img src="{{ asset('bundles/ensjobeet/images/symfony.gif') }}" alt="symfony framework" />*/
+/*             </a>*/
+/*           </span>*/
+/*           <ul>*/
+/*             <li><a href="">About Jobeet</a></li>*/
+/*             <li class="feed"><a href="">Full feed</a></li>*/
+/*             <li><a href="">Jobeet API</a></li>*/
+/*             <li class="last"><a href="">Affiliates</a></li>*/
+/*           </ul>*/
+/*         </div>*/
+/*       </div>*/
+/*     </div>*/
+/*   </body>*/
 /* </html>*/
-/* */

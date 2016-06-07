@@ -15,14 +15,14 @@ class __TwigTemplate_3dbd22612afa9f30a5352d248e4353ff41f75edb664de9a652509bef9a2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_11d60c3bd7bb50f1bedc62ad3ecd5082b8a1ceb68203ac7eb2dfbe676fc0f296 = $this->env->getExtension("native_profiler");
-        $__internal_11d60c3bd7bb50f1bedc62ad3ecd5082b8a1ceb68203ac7eb2dfbe676fc0f296->enter($__internal_11d60c3bd7bb50f1bedc62ad3ecd5082b8a1ceb68203ac7eb2dfbe676fc0f296_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/textarea_widget.html.php"));
+        $__internal_87c4a48f12ec6e861cc7b0dbbb10737a3fdb45a11c820e8fc83e94db34a373d8 = $this->env->getExtension("native_profiler");
+        $__internal_87c4a48f12ec6e861cc7b0dbbb10737a3fdb45a11c820e8fc83e94db34a373d8->enter($__internal_87c4a48f12ec6e861cc7b0dbbb10737a3fdb45a11c820e8fc83e94db34a373d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/textarea_widget.html.php"));
 
         // line 1
         echo "<textarea <?php echo \$view['form']->block(\$form, 'widget_attributes') ?>><?php echo \$view->escape(\$value) ?></textarea>
 ";
         
-        $__internal_11d60c3bd7bb50f1bedc62ad3ecd5082b8a1ceb68203ac7eb2dfbe676fc0f296->leave($__internal_11d60c3bd7bb50f1bedc62ad3ecd5082b8a1ceb68203ac7eb2dfbe676fc0f296_prof);
+        $__internal_87c4a48f12ec6e861cc7b0dbbb10737a3fdb45a11c820e8fc83e94db34a373d8->leave($__internal_87c4a48f12ec6e861cc7b0dbbb10737a3fdb45a11c820e8fc83e94db34a373d8_prof);
 
     }
 

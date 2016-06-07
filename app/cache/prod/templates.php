@@ -79,6 +79,7 @@
   'DoctrineBundle:Collector:db.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\vendor\\doctrine\\doctrine-bundle/Resources/views/Collector/db.html.twig',
   'DoctrineBundle:Collector:explain.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\vendor\\doctrine\\doctrine-bundle/Resources/views/Collector/explain.html.twig',
   'EnsJobeetBundle:Default:index.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\src\\Ens\\JobeetBundle/Resources/views/Default/index.html.twig',
+  'EnsJobeetBundle::layout.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\src\\Ens\\JobeetBundle/Resources/views/layout.html.twig',
   '::base.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/base.html.twig',
   ':default:index.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/default/index.html.twig',
   ':job:edit.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/job/edit.html.twig',
