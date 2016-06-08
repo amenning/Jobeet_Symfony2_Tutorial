@@ -27,7 +27,7 @@ class Category
     /**
      * @var \Doctrine\Common\Collections\Collection
      */
-    private $catgory_affiliates;
+    private $category_affiliates;
 
     /**
      * Constructor
@@ -35,7 +35,7 @@ class Category
     public function __construct()
     {
         $this->jobs = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->catgory_affiliates = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->category_affiliates = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**
@@ -105,36 +105,36 @@ class Category
     }
 
     /**
-     * Add catgory_affiliates
+     * Add category_affiliates
      *
-     * @param \Ens\JobeetBundle\Entity\CategoryAffiliate $catgoryAffiliates
+     * @param \Ens\JobeetBundle\Entity\CategoryAffiliate $categoryAffiliates
      * @return Category
      */
-    public function addCatgoryAffiliate(\Ens\JobeetBundle\Entity\CategoryAffiliate $catgoryAffiliates)
+    public function addCategoryAffiliate(\Ens\JobeetBundle\Entity\CategoryAffiliate $categoryAffiliates)
     {
-        $this->catgory_affiliates[] = $catgoryAffiliates;
+        $this->category_affiliates[] = $categoryAffiliates;
 
         return $this;
     }
 
     /**
-     * Remove catgory_affiliates
+     * Remove category_affiliates
      *
-     * @param \Ens\JobeetBundle\Entity\CategoryAffiliate $catgoryAffiliates
+     * @param \Ens\JobeetBundle\Entity\CategoryAffiliate $categoryAffiliates
      */
-    public function removeCatgoryAffiliate(\Ens\JobeetBundle\Entity\CategoryAffiliate $catgoryAffiliates)
+    public function removeCategoryAffiliate(\Ens\JobeetBundle\Entity\CategoryAffiliate $categoryAffiliates)
     {
-        $this->catgory_affiliates->removeElement($catgoryAffiliates);
+        $this->category_affiliates->removeElement($categoryAffiliates);
     }
 
     /**
-     * Get catgory_affiliates
+     * Get category_affiliates
      *
      * @return \Doctrine\Common\Collections\Collection 
      */
-    public function getCatgoryAffiliates()
+    public function getCategoryAffiliates()
     {
-        return $this->catgory_affiliates;
+        return $this->category_affiliates;
     }
 	
 	public function __toString()

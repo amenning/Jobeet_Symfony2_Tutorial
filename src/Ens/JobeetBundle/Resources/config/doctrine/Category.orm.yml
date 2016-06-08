@@ -15,6 +15,6 @@ Ens\JobeetBundle\Entity\Category:
     jobs:
       targetEntity: Job
       mappedBy: category
-    catgory_affiliates:
+    category_affiliates:
       targetEntity: CategoryAffiliate
       mappedBy: category

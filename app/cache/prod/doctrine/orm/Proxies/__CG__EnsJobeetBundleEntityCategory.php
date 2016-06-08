@@ -64,10 +64,10 @@ class Category extends \Ens\JobeetBundle\Entity\Category implements \Doctrine\OR
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'catgory_affiliates');
+            return array('__isInitialized__', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'category_affiliates');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'catgory_affiliates');
+        return array('__isInitialized__', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'category_affiliates');
     }
 
     /**
@@ -246,34 +246,34 @@ class Category extends \Ens\JobeetBundle\Entity\Category implements \Doctrine\OR
     /**
      * {@inheritDoc}
      */
-    public function addCatgoryAffiliate(\Ens\JobeetBundle\Entity\CategoryAffiliate $catgoryAffiliates)
+    public function addCategoryAffiliate(\Ens\JobeetBundle\Entity\CategoryAffiliate $categoryAffiliates)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addCatgoryAffiliate', array($catgoryAffiliates));
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addCategoryAffiliate', array($categoryAffiliates));
 
-        return parent::addCatgoryAffiliate($catgoryAffiliates);
+        return parent::addCategoryAffiliate($categoryAffiliates);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function removeCatgoryAffiliate(\Ens\JobeetBundle\Entity\CategoryAffiliate $catgoryAffiliates)
+    public function removeCategoryAffiliate(\Ens\JobeetBundle\Entity\CategoryAffiliate $categoryAffiliates)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeCatgoryAffiliate', array($catgoryAffiliates));
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeCategoryAffiliate', array($categoryAffiliates));
 
-        return parent::removeCatgoryAffiliate($catgoryAffiliates);
+        return parent::removeCategoryAffiliate($categoryAffiliates);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function getCatgoryAffiliates()
+    public function getCategoryAffiliates()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCatgoryAffiliates', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCategoryAffiliates', array());
 
-        return parent::getCatgoryAffiliates();
+        return parent::getCategoryAffiliates();
     }
 
     /**
