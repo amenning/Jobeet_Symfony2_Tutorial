@@ -44,18 +44,7 @@
       </div>
  
       <div id="content">
-        {% if app.session.hasFlash('notice') %}
-          <div class="flash_notice">
-            {{ app.session.flash('notice') }}
-          </div>
-        {% endif %}
- 
-        {% if app.session.hasFlash('error') %}
-          <div class="flash_error">
-            {{ app.session.flash('error') }}
-          </div>
-        {% endif %}
- 
+
         <div class="content">
             {% block body %}
             {% endblock %}

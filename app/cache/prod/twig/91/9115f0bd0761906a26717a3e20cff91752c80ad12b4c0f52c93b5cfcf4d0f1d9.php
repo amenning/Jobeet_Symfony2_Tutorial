@@ -81,39 +81,12 @@ class __TwigTemplate_53970537b72a461779c4668100541185ea502b48409ec7a5812b38312c9
       </div>
  
       <div id=\"content\">
-        ";
-        // line 47
-        if ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : null), "session", array()), "hasFlash", array(0 => "notice"), "method")) {
-            // line 48
-            echo "          <div class=\"flash_notice\">
-            ";
-            // line 49
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : null), "session", array()), "flash", array(0 => "notice"), "method"), "html", null, true);
-            echo "
-          </div>
-        ";
-        }
-        // line 52
-        echo " 
-        ";
-        // line 53
-        if ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : null), "session", array()), "hasFlash", array(0 => "error"), "method")) {
-            // line 54
-            echo "          <div class=\"flash_error\">
-            ";
-            // line 55
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : null), "session", array()), "flash", array(0 => "error"), "method"), "html", null, true);
-            echo "
-          </div>
-        ";
-        }
-        // line 58
-        echo " 
+
         <div class=\"content\">
             ";
-        // line 60
+        // line 49
         $this->displayBlock('body', $context, $blocks);
-        // line 62
+        // line 51
         echo "        </div>
       </div>
  
@@ -121,12 +94,12 @@ class __TwigTemplate_53970537b72a461779c4668100541185ea502b48409ec7a5812b38312c9
         <div class=\"content\">
           <span class=\"symfony\">
             <img src=\"";
-        // line 68
+        // line 57
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/images/jobeet-mini.png"), "html", null, true);
         echo "\" />
             powered by <a href=\"http://www.symfony.com/\">
               <img src=\"";
-        // line 70
+        // line 59
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/images/symfony.gif"), "html", null, true);
         echo "\" alt=\"symfony framework\" />
             </a>
@@ -167,10 +140,10 @@ class __TwigTemplate_53970537b72a461779c4668100541185ea502b48409ec7a5812b38312c9
     {
     }
 
-    // line 60
+    // line 49
     public function block_body($context, array $blocks = array())
     {
-        // line 61
+        // line 50
         echo "            ";
     }
 
@@ -186,7 +159,7 @@ class __TwigTemplate_53970537b72a461779c4668100541185ea502b48409ec7a5812b38312c9
 
     public function getDebugInfo()
     {
-        return array (  174 => 61,  171 => 60,  166 => 13,  159 => 11,  156 => 10,  151 => 7,  148 => 6,  130 => 70,  125 => 68,  117 => 62,  115 => 60,  111 => 58,  105 => 55,  102 => 54,  100 => 53,  97 => 52,  91 => 49,  88 => 48,  86 => 47,  64 => 28,  54 => 21,  50 => 20,  40 => 14,  37 => 13,  35 => 10,  32 => 9,  30 => 6,  23 => 1,);
+        return array (  147 => 50,  144 => 49,  139 => 13,  132 => 11,  129 => 10,  124 => 7,  121 => 6,  103 => 59,  98 => 57,  90 => 51,  88 => 49,  64 => 28,  54 => 21,  50 => 20,  40 => 14,  37 => 13,  35 => 10,  32 => 9,  30 => 6,  23 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -235,18 +208,7 @@ class __TwigTemplate_53970537b72a461779c4668100541185ea502b48409ec7a5812b38312c9
 /*       </div>*/
 /*  */
 /*       <div id="content">*/
-/*         {% if app.session.hasFlash('notice') %}*/
-/*           <div class="flash_notice">*/
-/*             {{ app.session.flash('notice') }}*/
-/*           </div>*/
-/*         {% endif %}*/
-/*  */
-/*         {% if app.session.hasFlash('error') %}*/
-/*           <div class="flash_error">*/
-/*             {{ app.session.flash('error') }}*/
-/*           </div>*/
-/*         {% endif %}*/
-/*  */
+/* */
 /*         <div class="content">*/
 /*             {% block body %}*/
 /*             {% endblock %}*/
