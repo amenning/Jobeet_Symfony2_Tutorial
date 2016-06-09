@@ -22,10 +22,15 @@ class JobController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 		
-		$jobs = $em->getRepository('EnsJobeetBundle:Job')->getActiveJobs();
+		$categories = $em->getRepository('EnsJobeetBundle:Category')->getWithJobs();
+		
+		foreach($categories as $category)
+		{
+			$category->setActiveJobs($em->getRepository('EnsJobeetBundle:Job')->getActiveJobs($category->getId(), 10));
+		}
 
         return $this->render('job/index.html.twig', array(
-            'jobs' => $jobs,
+            'categories' => $categories,
         ));
     }
 
