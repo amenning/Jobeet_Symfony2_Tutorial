@@ -1,11 +1,5 @@
-d7fd00,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/sensio-labs/paris-france/14/web-developer-expired,1465439332,34ab9a,200
-34ab9a,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/sensio-labs/paris-france/14/web-developer-expired,1465439332,,404
-6e5d1a,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/sensio-labs/paris-france/34/web-developer-expired,1465439340,,200
-485628,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/,1465439342,,200
-cdd5aa,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/company-100/paris-france/15/web-developer,1465439345,,200
-a72cc5,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/sensio-labs/paris-france/12/web-developer,1465439349,,200
-12de58,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/company-100/paris-france/15/web-developer,1465439352,,200
-eeab1b,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/extreme-sensio/paris-france/13/web-designer,1465439356,,200
-c2109a,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/sensio-labs/paris-france/12/web-developer,1465439359,,200
-be4f42,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/sensio-labs/paris-france/14/web-developer,1465439368,f73def,200
-f73def,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/sensio-labs/paris-france/14/web-developer,1465439368,,404
+3f11a0,127.0.0.1,GET,http://jobeet.local/app_dev.php/,1465516450,,200
+0dcc5d,127.0.0.1,GET,http://jobeet.local/app_dev.php/category/programming,1465516458,b8bd1a,200
+b8bd1a,127.0.0.1,GET,http://jobeet.local/app_dev.php/category/programming,1465516458,,500
+643499,127.0.0.1,GET,http://jobeet.local/app_dev.php/category/design,1465516515,96283e,200
+96283e,127.0.0.1,GET,http://jobeet.local/app_dev.php/category/design,1465516515,,500

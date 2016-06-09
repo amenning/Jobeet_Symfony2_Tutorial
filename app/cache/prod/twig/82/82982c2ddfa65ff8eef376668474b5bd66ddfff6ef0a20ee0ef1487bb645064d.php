@@ -55,10 +55,12 @@ class __TwigTemplate_ea392680849e1754e334b168e5f3ec667ec1f489500887a36e80fa398bb
           <div class=\"feed\">
             <a href=\"\">Feed</a>
           </div>
-          <h1>";
+          <h1><a href=\"";
             // line 16
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ens_jobeet_category", array("slug" => $this->getAttribute($context["category"], "slug", array()))), "html", null, true);
+            echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["category"], "name", array()), "html", null, true);
-            echo "</h1>
+            echo "</a></h1>
         </div>
         <table class=\"jobs\">
           ";
@@ -118,13 +120,30 @@ class __TwigTemplate_ea392680849e1754e334b168e5f3ec667ec1f489500887a36e80fa398bb
             $context = array_intersect_key($context, $_parent) + $_parent;
             // line 30
             echo "        </table>
-      </div>
+        
+        ";
+            // line 32
+            if ($this->getAttribute($context["category"], "morejobs", array())) {
+                // line 33
+                echo "        \t<div class=\"more_jobs\">
+        \t\tand <a href=\"";
+                // line 34
+                echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ens_jobeet_category", array("slug" => $this->getAttribute($context["category"], "slug", array()))), "html", null, true);
+                echo "\">";
+                echo twig_escape_filter($this->env, $this->getAttribute($context["category"], "morejobs", array()), "html", null, true);
+                echo "</a>
+        \t\tmore...
+        \t</div>
+        ";
+            }
+            // line 38
+            echo "      </div>
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 33
+        // line 40
         echo "  </div>
 ";
     }
@@ -141,7 +160,7 @@ class __TwigTemplate_ea392680849e1754e334b168e5f3ec667ec1f489500887a36e80fa398bb
 
     public function getDebugInfo()
     {
-        return array (  128 => 33,  120 => 30,  103 => 27,  97 => 24,  93 => 23,  88 => 21,  83 => 20,  66 => 19,  60 => 16,  53 => 11,  49 => 10,  46 => 9,  43 => 8,  37 => 5,  32 => 4,  29 => 3,  11 => 1,);
+        return array (  147 => 40,  140 => 38,  131 => 34,  128 => 33,  126 => 32,  122 => 30,  105 => 27,  99 => 24,  95 => 23,  90 => 21,  85 => 20,  68 => 19,  60 => 16,  53 => 11,  49 => 10,  46 => 9,  43 => 8,  37 => 5,  32 => 4,  29 => 3,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -159,7 +178,7 @@ class __TwigTemplate_ea392680849e1754e334b168e5f3ec667ec1f489500887a36e80fa398bb
 /*           <div class="feed">*/
 /*             <a href="">Feed</a>*/
 /*           </div>*/
-/*           <h1>{{ category.name }}</h1>*/
+/*           <h1><a href="{{ path('ens_jobeet_category', { 'slug': category.slug }) }}">{{ category.name }}</a></h1>*/
 /*         </div>*/
 /*         <table class="jobs">*/
 /*           {% for entity in category.activejobs %}*/
@@ -174,6 +193,13 @@ class __TwigTemplate_ea392680849e1754e334b168e5f3ec667ec1f489500887a36e80fa398bb
 /*             </tr>*/
 /*           {% endfor %}*/
 /*         </table>*/
+/*         */
+/*         {% if category.morejobs %}*/
+/*         	<div class="more_jobs">*/
+/*         		and <a href="{{ path('ens_jobeet_category', { 'slug': category.slug }) }}">{{ category.morejobs }}</a>*/
+/*         		more...*/
+/*         	</div>*/
+/*         {% endif %}*/
 /*       </div>*/
 /*     {% endfor %}*/
 /*   </div>*/
