@@ -64,10 +64,18 @@ class JobController extends Controller
      */
     public function showAction(Job $job)
     {
-        $deleteForm = $this->createDeleteForm($job);
+		$em = $this->getDoctrine()->getManager();	
+			
+		$job_check = $em->getRepository('EnsJobeetBundle:Job')->getActiveJob($job->getId());
+		
+		if (!$job_check) {
+        	throw $this->createNotFoundException('That job was not found');
+    	}
+		        	
+        $deleteForm = $this->createDeleteForm($job_check);
 
         return $this->render('job/show.html.twig', array(
-            'job' => $job,
+            'job' => $job_check,
             'delete_form' => $deleteForm->createView(),
         ));
     }
