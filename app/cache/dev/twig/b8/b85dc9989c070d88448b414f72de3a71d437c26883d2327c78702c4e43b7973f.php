@@ -15,8 +15,8 @@ class __TwigTemplate_a4f7b739607ccbec5fc9f35a579e2640a4d65e8649c186213cc219da993
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_dfb2f754c14d237af484565ee49e2f46ef87f28cbd23b0d6f1b9d6d105f2bb65 = $this->env->getExtension("native_profiler");
-        $__internal_dfb2f754c14d237af484565ee49e2f46ef87f28cbd23b0d6f1b9d6d105f2bb65->enter($__internal_dfb2f754c14d237af484565ee49e2f46ef87f28cbd23b0d6f1b9d6d105f2bb65_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/button_widget.html.php"));
+        $__internal_16881902c4de24150acebb2f09249e1eaee2070572dc16c85c23d47804ebad0e = $this->env->getExtension("native_profiler");
+        $__internal_16881902c4de24150acebb2f09249e1eaee2070572dc16c85c23d47804ebad0e->enter($__internal_16881902c4de24150acebb2f09249e1eaee2070572dc16c85c23d47804ebad0e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Framework/Form/button_widget.html.php"));
 
         // line 1
         echo "<?php if (!\$label) { \$label = isset(\$label_format)
@@ -25,7 +25,7 @@ class __TwigTemplate_a4f7b739607ccbec5fc9f35a579e2640a4d65e8649c186213cc219da993
 <button type=\"<?php echo isset(\$type) ? \$view->escape(\$type) : 'button' ?>\" <?php echo \$view['form']->block(\$form, 'button_attributes') ?>><?php echo \$view->escape(false !== \$translation_domain ? \$view['translator']->trans(\$label, array(), \$translation_domain) : \$label) ?></button>
 ";
         
-        $__internal_dfb2f754c14d237af484565ee49e2f46ef87f28cbd23b0d6f1b9d6d105f2bb65->leave($__internal_dfb2f754c14d237af484565ee49e2f46ef87f28cbd23b0d6f1b9d6d105f2bb65_prof);
+        $__internal_16881902c4de24150acebb2f09249e1eaee2070572dc16c85c23d47804ebad0e->leave($__internal_16881902c4de24150acebb2f09249e1eaee2070572dc16c85c23d47804ebad0e_prof);
 
     }
 
