@@ -15,8 +15,8 @@ class __TwigTemplate_56a62097b96ed526173b3e7d46f3768071ccc973e1e724c3909ae7a8294
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d36ac93c8404a11be918c23cbd17d8f5951c45c4b5663664b9977dc55d20aaa9 = $this->env->getExtension("native_profiler");
-        $__internal_d36ac93c8404a11be918c23cbd17d8f5951c45c4b5663664b9977dc55d20aaa9->enter($__internal_d36ac93c8404a11be918c23cbd17d8f5951c45c4b5663664b9977dc55d20aaa9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:exception.html.twig"));
+        $__internal_08a81e1749805ce8112f4380a3ec1da3854c5e893e5b126196c54abfcc67f069 = $this->env->getExtension("native_profiler");
+        $__internal_08a81e1749805ce8112f4380a3ec1da3854c5e893e5b126196c54abfcc67f069->enter($__internal_08a81e1749805ce8112f4380a3ec1da3854c5e893e5b126196c54abfcc67f069_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:exception.html.twig"));
 
         // line 1
         echo "<div class=\"block-exception\">
@@ -235,7 +235,7 @@ class __TwigTemplate_56a62097b96ed526173b3e7d46f3768071ccc973e1e724c3909ae7a8294
 //]]></script>
 ";
         
-        $__internal_d36ac93c8404a11be918c23cbd17d8f5951c45c4b5663664b9977dc55d20aaa9->leave($__internal_d36ac93c8404a11be918c23cbd17d8f5951c45c4b5663664b9977dc55d20aaa9_prof);
+        $__internal_08a81e1749805ce8112f4380a3ec1da3854c5e893e5b126196c54abfcc67f069->leave($__internal_08a81e1749805ce8112f4380a3ec1da3854c5e893e5b126196c54abfcc67f069_prof);
 
     }
 

@@ -23,20 +23,20 @@ class __TwigTemplate_e829e50dc4dad18bc271c4a8ac590a808e206d68905be59080075b7fae3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ad3b28b982478b0da5f65f786c3134b8841ebc05eac6601bc56799e9937776bd = $this->env->getExtension("native_profiler");
-        $__internal_ad3b28b982478b0da5f65f786c3134b8841ebc05eac6601bc56799e9937776bd->enter($__internal_ad3b28b982478b0da5f65f786c3134b8841ebc05eac6601bc56799e9937776bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EnsJobeet/category/show.html.twig"));
+        $__internal_451fe4f6a21e409880426f634e7aa2c66abd38ac36fe78f87b34570380dfc02a = $this->env->getExtension("native_profiler");
+        $__internal_451fe4f6a21e409880426f634e7aa2c66abd38ac36fe78f87b34570380dfc02a->enter($__internal_451fe4f6a21e409880426f634e7aa2c66abd38ac36fe78f87b34570380dfc02a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@EnsJobeet/category/show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ad3b28b982478b0da5f65f786c3134b8841ebc05eac6601bc56799e9937776bd->leave($__internal_ad3b28b982478b0da5f65f786c3134b8841ebc05eac6601bc56799e9937776bd_prof);
+        $__internal_451fe4f6a21e409880426f634e7aa2c66abd38ac36fe78f87b34570380dfc02a->leave($__internal_451fe4f6a21e409880426f634e7aa2c66abd38ac36fe78f87b34570380dfc02a_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_bb27563b5c53315c028eaa18d9b90467d0d7609bd40173f84df434ca9ffd27e2 = $this->env->getExtension("native_profiler");
-        $__internal_bb27563b5c53315c028eaa18d9b90467d0d7609bd40173f84df434ca9ffd27e2->enter($__internal_bb27563b5c53315c028eaa18d9b90467d0d7609bd40173f84df434ca9ffd27e2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_504097a06217bbf31c5574fdeb4485d4f9dcdf37da117705e7e613090d2d945b = $this->env->getExtension("native_profiler");
+        $__internal_504097a06217bbf31c5574fdeb4485d4f9dcdf37da117705e7e613090d2d945b->enter($__internal_504097a06217bbf31c5574fdeb4485d4f9dcdf37da117705e7e613090d2d945b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 4
         echo "  Jobs in the ";
@@ -44,15 +44,15 @@ class __TwigTemplate_e829e50dc4dad18bc271c4a8ac590a808e206d68905be59080075b7fae3
         echo " category
 ";
         
-        $__internal_bb27563b5c53315c028eaa18d9b90467d0d7609bd40173f84df434ca9ffd27e2->leave($__internal_bb27563b5c53315c028eaa18d9b90467d0d7609bd40173f84df434ca9ffd27e2_prof);
+        $__internal_504097a06217bbf31c5574fdeb4485d4f9dcdf37da117705e7e613090d2d945b->leave($__internal_504097a06217bbf31c5574fdeb4485d4f9dcdf37da117705e7e613090d2d945b_prof);
 
     }
 
     // line 7
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_6821baaab8e4375c4a0c2512fe9183e355aabe7ddc6870dc1d934e12827b63ed = $this->env->getExtension("native_profiler");
-        $__internal_6821baaab8e4375c4a0c2512fe9183e355aabe7ddc6870dc1d934e12827b63ed->enter($__internal_6821baaab8e4375c4a0c2512fe9183e355aabe7ddc6870dc1d934e12827b63ed_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_d56456f3dd63d52099266b30c1dee75706518be869668fcb94d9f8e8af0d35d0 = $this->env->getExtension("native_profiler");
+        $__internal_d56456f3dd63d52099266b30c1dee75706518be869668fcb94d9f8e8af0d35d0->enter($__internal_d56456f3dd63d52099266b30c1dee75706518be869668fcb94d9f8e8af0d35d0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 8
         echo "  ";
@@ -64,15 +64,15 @@ class __TwigTemplate_e829e50dc4dad18bc271c4a8ac590a808e206d68905be59080075b7fae3
         echo "\" type=\"text/css\" media=\"all\" />
 ";
         
-        $__internal_6821baaab8e4375c4a0c2512fe9183e355aabe7ddc6870dc1d934e12827b63ed->leave($__internal_6821baaab8e4375c4a0c2512fe9183e355aabe7ddc6870dc1d934e12827b63ed_prof);
+        $__internal_d56456f3dd63d52099266b30c1dee75706518be869668fcb94d9f8e8af0d35d0->leave($__internal_d56456f3dd63d52099266b30c1dee75706518be869668fcb94d9f8e8af0d35d0_prof);
 
     }
 
     // line 12
     public function block_body($context, array $blocks = array())
     {
-        $__internal_ab748625d0db80b392480c08f1b0e63737b37bd1fd9b60c5dd44cc170302f1ad = $this->env->getExtension("native_profiler");
-        $__internal_ab748625d0db80b392480c08f1b0e63737b37bd1fd9b60c5dd44cc170302f1ad->enter($__internal_ab748625d0db80b392480c08f1b0e63737b37bd1fd9b60c5dd44cc170302f1ad_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_cbf6ef86dc996f8e79fc3ab0f0588c7b263ca72836bb3e65dc59853e97d6c816 = $this->env->getExtension("native_profiler");
+        $__internal_cbf6ef86dc996f8e79fc3ab0f0588c7b263ca72836bb3e65dc59853e97d6c816->enter($__internal_cbf6ef86dc996f8e79fc3ab0f0588c7b263ca72836bb3e65dc59853e97d6c816_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 13
         echo "  <div class=\"category\">
@@ -85,11 +85,112 @@ class __TwigTemplate_e829e50dc4dad18bc271c4a8ac590a808e206d68905be59080075b7fae3
         echo "</h1>
   </div>
  
-";
+  ";
         // line 20
         $this->loadTemplate("EnsJobeetBundle:Job:list.html.twig", "@EnsJobeet/category/show.html.twig", 20)->display(array_merge($context, array("jobs" => $this->getAttribute((isset($context["category"]) ? $context["category"] : $this->getContext($context, "category")), "activejobs", array()))));
+        // line 21
+        echo " 
+  ";
+        // line 22
+        if (((isset($context["last_page"]) ? $context["last_page"] : $this->getContext($context, "last_page")) > 1)) {
+            // line 23
+            echo "    <div class=\"pagination\">
+      <a href=\"";
+            // line 24
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ens_jobeet_category", array("slug" => $this->getAttribute((isset($context["category"]) ? $context["category"] : $this->getContext($context, "category")), "slug", array()), "page" => 1)), "html", null, true);
+            echo "\">
+        <img src=\"";
+            // line 25
+            echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/images/first.png"), "html", null, true);
+            echo "\" alt=\"First page\" title=\"First page\" />
+      </a>
+ 
+      <a href=\"";
+            // line 28
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ens_jobeet_category", array("slug" => $this->getAttribute((isset($context["category"]) ? $context["category"] : $this->getContext($context, "category")), "slug", array()), "page" => (isset($context["previous_page"]) ? $context["previous_page"] : $this->getContext($context, "previous_page")))), "html", null, true);
+            echo "\">
+        <img src=\"";
+            // line 29
+            echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/images/previous.png"), "html", null, true);
+            echo "\" alt=\"Previous page\" title=\"Previous page\" />
+      </a>
+ 
+      ";
+            // line 32
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable(range(1, (isset($context["last_page"]) ? $context["last_page"] : $this->getContext($context, "last_page"))));
+            foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
+                // line 33
+                echo "        ";
+                if (($context["page"] == (isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")))) {
+                    // line 34
+                    echo "          ";
+                    echo twig_escape_filter($this->env, $context["page"], "html", null, true);
+                    echo "
+        ";
+                } else {
+                    // line 36
+                    echo "          <a href=\"";
+                    echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ens_jobeet_category", array("slug" => $this->getAttribute((isset($context["category"]) ? $context["category"] : $this->getContext($context, "category")), "slug", array()), "page" => $context["page"])), "html", null, true);
+                    echo "\">";
+                    echo twig_escape_filter($this->env, $context["page"], "html", null, true);
+                    echo "</a>
+        ";
+                }
+                // line 38
+                echo "      ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 39
+            echo " 
+      <a href=\"";
+            // line 40
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ens_jobeet_category", array("slug" => $this->getAttribute((isset($context["category"]) ? $context["category"] : $this->getContext($context, "category")), "slug", array()), "page" => (isset($context["next_page"]) ? $context["next_page"] : $this->getContext($context, "next_page")))), "html", null, true);
+            echo "\">
+        <img src=\"";
+            // line 41
+            echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/images/next.png"), "html", null, true);
+            echo "\" alt=\"Next page\" title=\"Next page\" />
+      </a>
+ 
+      <a href=\"";
+            // line 44
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ens_jobeet_category", array("slug" => $this->getAttribute((isset($context["category"]) ? $context["category"] : $this->getContext($context, "category")), "slug", array()), "page" => (isset($context["last_page"]) ? $context["last_page"] : $this->getContext($context, "last_page")))), "html", null, true);
+            echo "\">
+        <img src=\"";
+            // line 45
+            echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/images/last.png"), "html", null, true);
+            echo "\" alt=\"Last page\" title=\"Last page\" />
+      </a>
+    </div>
+  ";
+        }
+        // line 49
+        echo " 
+  <div class=\"pagination_desc\">
+    <strong>";
+        // line 51
+        echo twig_escape_filter($this->env, (isset($context["total_jobs"]) ? $context["total_jobs"] : $this->getContext($context, "total_jobs")), "html", null, true);
+        echo "</strong> jobs in this category
+ 
+    ";
+        // line 53
+        if (((isset($context["last_page"]) ? $context["last_page"] : $this->getContext($context, "last_page")) > 1)) {
+            // line 54
+            echo "      - page <strong>";
+            echo twig_escape_filter($this->env, (isset($context["current_page"]) ? $context["current_page"] : $this->getContext($context, "current_page")), "html", null, true);
+            echo "/";
+            echo twig_escape_filter($this->env, (isset($context["last_page"]) ? $context["last_page"] : $this->getContext($context, "last_page")), "html", null, true);
+            echo "</strong>
+    ";
+        }
+        // line 56
+        echo "  </div>
+";
         
-        $__internal_ab748625d0db80b392480c08f1b0e63737b37bd1fd9b60c5dd44cc170302f1ad->leave($__internal_ab748625d0db80b392480c08f1b0e63737b37bd1fd9b60c5dd44cc170302f1ad_prof);
+        $__internal_cbf6ef86dc996f8e79fc3ab0f0588c7b263ca72836bb3e65dc59853e97d6c816->leave($__internal_cbf6ef86dc996f8e79fc3ab0f0588c7b263ca72836bb3e65dc59853e97d6c816_prof);
 
     }
 
@@ -105,7 +206,7 @@ class __TwigTemplate_e829e50dc4dad18bc271c4a8ac590a808e206d68905be59080075b7fae3
 
     public function getDebugInfo()
     {
-        return array (  90 => 20,  84 => 17,  78 => 13,  72 => 12,  63 => 9,  58 => 8,  52 => 7,  42 => 4,  36 => 3,  11 => 1,);
+        return array (  190 => 56,  182 => 54,  180 => 53,  175 => 51,  171 => 49,  164 => 45,  160 => 44,  154 => 41,  150 => 40,  147 => 39,  141 => 38,  133 => 36,  127 => 34,  124 => 33,  120 => 32,  114 => 29,  110 => 28,  104 => 25,  100 => 24,  97 => 23,  95 => 22,  92 => 21,  90 => 20,  84 => 17,  78 => 13,  72 => 12,  63 => 9,  58 => 8,  52 => 7,  42 => 4,  36 => 3,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -127,5 +228,41 @@ class __TwigTemplate_e829e50dc4dad18bc271c4a8ac590a808e206d68905be59080075b7fae3
 /*     <h1>{{ category.name }}</h1>*/
 /*   </div>*/
 /*  */
-/* {% include 'EnsJobeetBundle:Job:list.html.twig' with {'jobs': category.activejobs} %}*/
+/*   {% include 'EnsJobeetBundle:Job:list.html.twig' with {'jobs': category.activejobs} %}*/
+/*  */
+/*   {% if last_page > 1 %}*/
+/*     <div class="pagination">*/
+/*       <a href="{{ path('ens_jobeet_category', { 'slug': category.slug, 'page': 1 }) }}">*/
+/*         <img src="{{ asset('bundles/ensjobeet/images/first.png') }}" alt="First page" title="First page" />*/
+/*       </a>*/
+/*  */
+/*       <a href="{{ path('ens_jobeet_category', { 'slug': category.slug, 'page': previous_page }) }}">*/
+/*         <img src="{{ asset('bundles/ensjobeet/images/previous.png') }}" alt="Previous page" title="Previous page" />*/
+/*       </a>*/
+/*  */
+/*       {% for page in 1..last_page %}*/
+/*         {% if page == current_page %}*/
+/*           {{ page }}*/
+/*         {% else %}*/
+/*           <a href="{{ path('ens_jobeet_category', { 'slug': category.slug, 'page': page }) }}">{{ page }}</a>*/
+/*         {% endif %}*/
+/*       {% endfor %}*/
+/*  */
+/*       <a href="{{ path('ens_jobeet_category', { 'slug': category.slug, 'page': next_page }) }}">*/
+/*         <img src="{{ asset('bundles/ensjobeet/images/next.png') }}" alt="Next page" title="Next page" />*/
+/*       </a>*/
+/*  */
+/*       <a href="{{ path('ens_jobeet_category', { 'slug': category.slug, 'page': last_page }) }}">*/
+/*         <img src="{{ asset('bundles/ensjobeet/images/last.png') }}" alt="Last page" title="Last page" />*/
+/*       </a>*/
+/*     </div>*/
+/*   {% endif %}*/
+/*  */
+/*   <div class="pagination_desc">*/
+/*     <strong>{{ total_jobs }}</strong> jobs in this category*/
+/*  */
+/*     {% if last_page > 1 %}*/
+/*       - page <strong>{{ current_page }}/{{ last_page }}</strong>*/
+/*     {% endif %}*/
+/*   </div>*/
 /* {% endblock %}*/
