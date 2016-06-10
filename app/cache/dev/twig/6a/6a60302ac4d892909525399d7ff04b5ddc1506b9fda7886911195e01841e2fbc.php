@@ -15,8 +15,8 @@ class __TwigTemplate_dbe7965b7dd3310f4233b6c20df60564d46eac9a671f2e8c1f75054cb35
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_372bbc5baad442647b07216567b16e6c318ab7f33e6ea8cd8667eb7d5ba01746 = $this->env->getExtension("native_profiler");
-        $__internal_372bbc5baad442647b07216567b16e6c318ab7f33e6ea8cd8667eb7d5ba01746->enter($__internal_372bbc5baad442647b07216567b16e6c318ab7f33e6ea8cd8667eb7d5ba01746_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:toolbar_item.html.twig"));
+        $__internal_bcf2bb2acfeb00fd3cbb3b05817f34b052df38b69ebf038ec8329c7d3676312a = $this->env->getExtension("native_profiler");
+        $__internal_bcf2bb2acfeb00fd3cbb3b05817f34b052df38b69ebf038ec8329c7d3676312a->enter($__internal_bcf2bb2acfeb00fd3cbb3b05817f34b052df38b69ebf038ec8329c7d3676312a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:toolbar_item.html.twig"));
 
         // line 1
         echo "<div class=\"sf-toolbar-block sf-toolbar-block-";
@@ -49,7 +49,7 @@ class __TwigTemplate_dbe7965b7dd3310f4233b6c20df60564d46eac9a671f2e8c1f75054cb35
 </div>
 ";
         
-        $__internal_372bbc5baad442647b07216567b16e6c318ab7f33e6ea8cd8667eb7d5ba01746->leave($__internal_372bbc5baad442647b07216567b16e6c318ab7f33e6ea8cd8667eb7d5ba01746_prof);
+        $__internal_bcf2bb2acfeb00fd3cbb3b05817f34b052df38b69ebf038ec8329c7d3676312a->leave($__internal_bcf2bb2acfeb00fd3cbb3b05817f34b052df38b69ebf038ec8329c7d3676312a_prof);
 
     }
 

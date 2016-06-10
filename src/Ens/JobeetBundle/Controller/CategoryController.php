@@ -14,7 +14,7 @@ use Ens\JobeetBundle\Entity\Category;
 	{
 		$em = $this->getDoctrine()->getEntityManager();
 		
-		$category = $em->getRepository('EnsJobeetBundle:Category')->fineOneBySlug($slug);
+		$category = $em->getRepository('EnsJobeetBundle:Category')->findOneBySlug($slug);
 		
 		if(!$category){
 			throw $this->createNotFoundException('Unable to find Category entity.');

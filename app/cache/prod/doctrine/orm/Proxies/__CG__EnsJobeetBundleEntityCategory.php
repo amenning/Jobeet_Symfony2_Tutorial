@@ -64,10 +64,10 @@ class Category extends \Ens\JobeetBundle\Entity\Category implements \Doctrine\OR
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'active_jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'more_jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'category_affiliates');
+            return array('__isInitialized__', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'active_jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'more_jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'category_affiliates', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'slug');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'active_jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'more_jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'category_affiliates');
+        return array('__isInitialized__', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'active_jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'more_jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'jobs', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'category_affiliates', '' . "\0" . 'Ens\\JobeetBundle\\Entity\\Category' . "\0" . 'slug');
     }
 
     /**
@@ -312,17 +312,6 @@ class Category extends \Ens\JobeetBundle\Entity\Category implements \Doctrine\OR
     /**
      * {@inheritDoc}
      */
-    public function getSlug()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSlug', array());
-
-        return parent::getSlug();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function setMoreJobs($jobs)
     {
 
@@ -340,6 +329,39 @@ class Category extends \Ens\JobeetBundle\Entity\Category implements \Doctrine\OR
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getMoreJobs', array());
 
         return parent::getMoreJobs();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setSlug($slug)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSlug', array($slug));
+
+        return parent::setSlug($slug);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getSlug()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSlug', array());
+
+        return parent::getSlug();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setSlugValue()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSlugValue', array());
+
+        return parent::setSlugValue();
     }
 
 }

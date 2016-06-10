@@ -100,7 +100,7 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
 
         // ens_jobeet_category
         if (0 === strpos($pathinfo, '/category') && preg_match('#^/category/(?P<slug>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'ens_jobeet_category')), array (  '_controller' => 'EnsJobeetBundle:Category:show',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'ens_jobeet_category')), array (  '_controller' => 'Ens\\JobeetBundle\\Controller\\CategoryController::showAction',));
         }
 
         // homepage
