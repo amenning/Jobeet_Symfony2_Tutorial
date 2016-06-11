@@ -28,6 +28,16 @@ class CategoryControllerTest extends WebTestCase
 		$crawler = $client->click($link);
 		$this->assertEquals('Ens\JobeetBundle\Controller\CategoryController::showAction', $client->getRequest()->attributes->get('_controller'));
 		$this->assertEquals('programming', $client->getRequest()->attributes->get('slug'));
+		
+		// only $max_jobs_on_category jobs are listed
+		$this->assertTrue($crawler->filter('.jobs tr')->count() == $max_jobs_on_category); 
+		$this->assertRegExp('/32 jobs/', $crawler->filter('.pagination_desc')->text());
+		$this->assertRegExp('/page 1\/2/', $crawler->filter('.pagination_desc')->text());
+		
+		$link = $crawler->selectLink('2')->link();
+		$crawler = $client->click($link);
+		$this->assertEquals(2, $client->getRequest()->attributes->get('page'));
+		$this->assertRegExp('/page 2\/2/', $crawler->filter('.pagination_desc')->text());
 				
 	}
 }
