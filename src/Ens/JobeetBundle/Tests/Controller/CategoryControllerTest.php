@@ -21,6 +21,13 @@ class CategoryControllerTest extends WebTestCase
 		$crawler = $client->click($link);
 		$this->assertEquals('Ens\JobeetBundle\Controller\CategoryController::showAction', $client->getRequest()->attributes->get('_controller'));
 		$this->assertEquals('programming', $client->getRequest()->attributes->get('slug'));
+		
+		// categories with more than $max_jobs_on_homepage jobs also have a "more" link
+		$crawler = $client->request('GET', '/');
+		$link = $crawler->selectLink('22')->link();
+		$crawler = $client->click($link);
+		$this->assertEquals('Ens\JobeetBundle\Controller\CategoryController::showAction', $client->getRequest()->attributes->get('_controller'));
+		$this->assertEquals('programming', $client->getRequest()->attributes->get('slug'));
 				
 	}
 }
