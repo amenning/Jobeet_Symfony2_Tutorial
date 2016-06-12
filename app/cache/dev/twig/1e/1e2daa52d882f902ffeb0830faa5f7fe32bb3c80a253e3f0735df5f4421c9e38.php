@@ -23,23 +23,23 @@ class __TwigTemplate_11d9a84ec75e4e9388e9e1b862840e770756b920c0b77b8d8fdd982c71b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fc762e9639a0a385bfe0ba0abf2783865bc10fe95810958337d893a3da851d2f = $this->env->getExtension("native_profiler");
-        $__internal_fc762e9639a0a385bfe0ba0abf2783865bc10fe95810958337d893a3da851d2f->enter($__internal_fc762e9639a0a385bfe0ba0abf2783865bc10fe95810958337d893a3da851d2f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":job:edit.html.twig"));
+        $__internal_35bbf62f07849faa92aeace5abcc3d4b811a9403216b93a023a7428d1b148593 = $this->env->getExtension("native_profiler");
+        $__internal_35bbf62f07849faa92aeace5abcc3d4b811a9403216b93a023a7428d1b148593->enter($__internal_35bbf62f07849faa92aeace5abcc3d4b811a9403216b93a023a7428d1b148593_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":job:edit.html.twig"));
 
         // line 3
         $this->env->getExtension('form')->renderer->setTheme((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), array(0 => $this));
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_fc762e9639a0a385bfe0ba0abf2783865bc10fe95810958337d893a3da851d2f->leave($__internal_fc762e9639a0a385bfe0ba0abf2783865bc10fe95810958337d893a3da851d2f_prof);
+        $__internal_35bbf62f07849faa92aeace5abcc3d4b811a9403216b93a023a7428d1b148593->leave($__internal_35bbf62f07849faa92aeace5abcc3d4b811a9403216b93a023a7428d1b148593_prof);
 
     }
 
     // line 5
     public function block_field_errors($context, array $blocks = array())
     {
-        $__internal_3ece71c2c0406feb3899ff27035191362081eda908f6ab887e16f61d4e486bc4 = $this->env->getExtension("native_profiler");
-        $__internal_3ece71c2c0406feb3899ff27035191362081eda908f6ab887e16f61d4e486bc4->enter($__internal_3ece71c2c0406feb3899ff27035191362081eda908f6ab887e16f61d4e486bc4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "field_errors"));
+        $__internal_1dc7bef1fbf16a39cbf6eea9b08a67995c183b58014daf5cddf08c020d3ad9f8 = $this->env->getExtension("native_profiler");
+        $__internal_1dc7bef1fbf16a39cbf6eea9b08a67995c183b58014daf5cddf08c020d3ad9f8->enter($__internal_1dc7bef1fbf16a39cbf6eea9b08a67995c183b58014daf5cddf08c020d3ad9f8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "field_errors"));
 
         // line 6
         ob_start();
@@ -68,15 +68,15 @@ class __TwigTemplate_11d9a84ec75e4e9388e9e1b862840e770756b920c0b77b8d8fdd982c71b
         }
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
         
-        $__internal_3ece71c2c0406feb3899ff27035191362081eda908f6ab887e16f61d4e486bc4->leave($__internal_3ece71c2c0406feb3899ff27035191362081eda908f6ab887e16f61d4e486bc4_prof);
+        $__internal_1dc7bef1fbf16a39cbf6eea9b08a67995c183b58014daf5cddf08c020d3ad9f8->leave($__internal_1dc7bef1fbf16a39cbf6eea9b08a67995c183b58014daf5cddf08c020d3ad9f8_prof);
 
     }
 
     // line 17
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_8f376acd755f34cf613053badb4f60f8e56f2f3417b6574267723dcb8f4f0b35 = $this->env->getExtension("native_profiler");
-        $__internal_8f376acd755f34cf613053badb4f60f8e56f2f3417b6574267723dcb8f4f0b35->enter($__internal_8f376acd755f34cf613053badb4f60f8e56f2f3417b6574267723dcb8f4f0b35_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_a836e2d1c14cbf56aabb15d7d9ad71b0abfaad9a17692e941f6f45deb3572cd0 = $this->env->getExtension("native_profiler");
+        $__internal_a836e2d1c14cbf56aabb15d7d9ad71b0abfaad9a17692e941f6f45deb3572cd0->enter($__internal_a836e2d1c14cbf56aabb15d7d9ad71b0abfaad9a17692e941f6f45deb3572cd0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 18
         echo "  ";
@@ -88,21 +88,21 @@ class __TwigTemplate_11d9a84ec75e4e9388e9e1b862840e770756b920c0b77b8d8fdd982c71b
         echo "\" type=\"text/css\" media=\"all\" />
 ";
         
-        $__internal_8f376acd755f34cf613053badb4f60f8e56f2f3417b6574267723dcb8f4f0b35->leave($__internal_8f376acd755f34cf613053badb4f60f8e56f2f3417b6574267723dcb8f4f0b35_prof);
+        $__internal_a836e2d1c14cbf56aabb15d7d9ad71b0abfaad9a17692e941f6f45deb3572cd0->leave($__internal_a836e2d1c14cbf56aabb15d7d9ad71b0abfaad9a17692e941f6f45deb3572cd0_prof);
 
     }
 
     // line 22
     public function block_body($context, array $blocks = array())
     {
-        $__internal_68b7d1f4cae828be0242483c00c86ef4eacf9d7374cd2a16462da202ab129d1e = $this->env->getExtension("native_profiler");
-        $__internal_68b7d1f4cae828be0242483c00c86ef4eacf9d7374cd2a16462da202ab129d1e->enter($__internal_68b7d1f4cae828be0242483c00c86ef4eacf9d7374cd2a16462da202ab129d1e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_ac9014dff4c1ef93ea736a5507d2639be12b33c309a4d2d18eb1498053a47285 = $this->env->getExtension("native_profiler");
+        $__internal_ac9014dff4c1ef93ea736a5507d2639be12b33c309a4d2d18eb1498053a47285->enter($__internal_ac9014dff4c1ef93ea736a5507d2639be12b33c309a4d2d18eb1498053a47285_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 23
         echo "  <h1>Job edit</h1>
   <form action=\"";
         // line 24
-        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ens_job_edit", array("id" => $this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "id", array()))), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ens_job_edit", array("token" => $this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "token", array()))), "html", null, true);
         echo "\" method=\"post\" ";
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'enctype');
         echo ">
@@ -262,31 +262,15 @@ class __TwigTemplate_11d9a84ec75e4e9388e9e1b862840e770756b920c0b77b8d8fdd982c71b
         <tr>
           <th>";
         // line 98
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "token", array()), 'label');
-        echo "</th>
-          <td>
-            ";
-        // line 100
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "token", array()), 'errors');
-        echo "
-            ";
-        // line 101
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "token", array()), 'widget');
-        echo "
-          </td>
-        </tr>
-        <tr>
-          <th>";
-        // line 105
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "is_public", array()), 'label');
         echo "</th>
           <td>
             ";
-        // line 107
+        // line 100
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "is_public", array()), 'errors');
         echo "
             ";
-        // line 108
+        // line 101
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "is_public", array()), 'widget');
         echo "
             <br /> Whether the job can also be published on affiliate websites or not.
@@ -294,16 +278,16 @@ class __TwigTemplate_11d9a84ec75e4e9388e9e1b862840e770756b920c0b77b8d8fdd982c71b
         </tr>
         <tr>
           <th>";
-        // line 113
+        // line 106
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "email", array()), 'label');
         echo "</th>
           <td>
             ";
-        // line 115
+        // line 108
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "email", array()), 'errors');
         echo "
             ";
-        // line 116
+        // line 109
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), "email", array()), 'widget');
         echo "
           </td>
@@ -312,13 +296,13 @@ class __TwigTemplate_11d9a84ec75e4e9388e9e1b862840e770756b920c0b77b8d8fdd982c71b
     </table>
  
     ";
-        // line 122
+        // line 115
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'rest');
         echo "
   </form>
 ";
         
-        $__internal_68b7d1f4cae828be0242483c00c86ef4eacf9d7374cd2a16462da202ab129d1e->leave($__internal_68b7d1f4cae828be0242483c00c86ef4eacf9d7374cd2a16462da202ab129d1e_prof);
+        $__internal_ac9014dff4c1ef93ea736a5507d2639be12b33c309a4d2d18eb1498053a47285->leave($__internal_ac9014dff4c1ef93ea736a5507d2639be12b33c309a4d2d18eb1498053a47285_prof);
 
     }
 
@@ -334,7 +318,7 @@ class __TwigTemplate_11d9a84ec75e4e9388e9e1b862840e770756b920c0b77b8d8fdd982c71b
 
     public function getDebugInfo()
     {
-        return array (  316 => 122,  307 => 116,  303 => 115,  298 => 113,  290 => 108,  286 => 107,  281 => 105,  274 => 101,  270 => 100,  265 => 98,  258 => 94,  254 => 93,  249 => 91,  242 => 87,  238 => 86,  233 => 84,  226 => 80,  222 => 79,  217 => 77,  210 => 73,  206 => 72,  201 => 70,  194 => 66,  190 => 65,  185 => 63,  178 => 59,  174 => 58,  169 => 56,  162 => 52,  158 => 51,  153 => 49,  146 => 45,  142 => 44,  137 => 42,  130 => 38,  126 => 37,  121 => 35,  105 => 24,  102 => 23,  96 => 22,  87 => 19,  82 => 18,  76 => 17,  66 => 12,  57 => 10,  53 => 9,  50 => 8,  47 => 7,  45 => 6,  39 => 5,  32 => 1,  30 => 3,  11 => 1,);
+        return array (  300 => 115,  291 => 109,  287 => 108,  282 => 106,  274 => 101,  270 => 100,  265 => 98,  258 => 94,  254 => 93,  249 => 91,  242 => 87,  238 => 86,  233 => 84,  226 => 80,  222 => 79,  217 => 77,  210 => 73,  206 => 72,  201 => 70,  194 => 66,  190 => 65,  185 => 63,  178 => 59,  174 => 58,  169 => 56,  162 => 52,  158 => 51,  153 => 49,  146 => 45,  142 => 44,  137 => 42,  130 => 38,  126 => 37,  121 => 35,  105 => 24,  102 => 23,  96 => 22,  87 => 19,  82 => 18,  76 => 17,  66 => 12,  57 => 10,  53 => 9,  50 => 8,  47 => 7,  45 => 6,  39 => 5,  32 => 1,  30 => 3,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -360,7 +344,7 @@ class __TwigTemplate_11d9a84ec75e4e9388e9e1b862840e770756b920c0b77b8d8fdd982c71b
 /*  */
 /* {% block body %}*/
 /*   <h1>Job edit</h1>*/
-/*   <form action="{{ path('ens_job_edit', { 'id': job.id }) }}" method="post" {{ form_enctype(edit_form) }}>*/
+/*   <form action="{{ path('ens_job_edit', { 'token': job.token }) }}" method="post" {{ form_enctype(edit_form) }}>*/
 /*     <table id="job_form">*/
 /*       <tfoot>*/
 /*         <tr>*/
@@ -431,13 +415,6 @@ class __TwigTemplate_11d9a84ec75e4e9388e9e1b862840e770756b920c0b77b8d8fdd982c71b
 /*           <td>*/
 /*             {{ form_errors(edit_form.how_to_apply) }}*/
 /*             {{ form_widget(edit_form.how_to_apply) }}*/
-/*           </td>*/
-/*         </tr>*/
-/*         <tr>*/
-/*           <th>{{ form_label(edit_form.token) }}</th>*/
-/*           <td>*/
-/*             {{ form_errors(edit_form.token) }}*/
-/*             {{ form_widget(edit_form.token) }}*/
 /*           </td>*/
 /*         </tr>*/
 /*         <tr>*/

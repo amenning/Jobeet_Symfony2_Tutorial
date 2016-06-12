@@ -80,6 +80,7 @@
   'DoctrineBundle:Collector:explain.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\vendor\\doctrine\\doctrine-bundle/Resources/views/Collector/explain.html.twig',
   'EnsJobeetBundle:category:show.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\src\\Ens\\JobeetBundle/Resources/views/category/show.html.twig',
   'EnsJobeetBundle:Default:index.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\src\\Ens\\JobeetBundle/Resources/views/Default/index.html.twig',
+  'EnsJobeetBundle:job:admin.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\src\\Ens\\JobeetBundle/Resources/views/job/admin.html.twig',
   'EnsJobeetBundle:job:list.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\src\\Ens\\JobeetBundle/Resources/views/job/list.html.twig',
   'EnsJobeetBundle::layout.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\src\\Ens\\JobeetBundle/Resources/views/layout.html.twig',
   'DebugBundle:Profiler:dump.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\DebugBundle/Resources/views/Profiler/dump.html.twig',
