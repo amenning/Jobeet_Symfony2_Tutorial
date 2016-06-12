@@ -47,6 +47,7 @@ class JobController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+            
             $em->persist($job);
             $em->flush();
 

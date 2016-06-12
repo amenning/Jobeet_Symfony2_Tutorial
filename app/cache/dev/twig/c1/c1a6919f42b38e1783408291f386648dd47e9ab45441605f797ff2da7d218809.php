@@ -10,6 +10,8 @@ class __TwigTemplate_73dded22e503bf237c6d8b1898778fed1716b7a580fd362137c18bdb704
         // line 1
         $this->parent = $this->loadTemplate("base.html.twig", ":job:new.html.twig", 1);
         $this->blocks = array(
+            'field_errors' => array($this, 'block_field_errors'),
+            'stylesheets' => array($this, 'block_stylesheets'),
             'body' => array($this, 'block_body'),
         );
     }
@@ -21,49 +23,302 @@ class __TwigTemplate_73dded22e503bf237c6d8b1898778fed1716b7a580fd362137c18bdb704
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_53be809b7e857cf4dc1d829bc25b3e7869b1e9b66da270b0fdb1fe743b0f505e = $this->env->getExtension("native_profiler");
-        $__internal_53be809b7e857cf4dc1d829bc25b3e7869b1e9b66da270b0fdb1fe743b0f505e->enter($__internal_53be809b7e857cf4dc1d829bc25b3e7869b1e9b66da270b0fdb1fe743b0f505e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":job:new.html.twig"));
+        $__internal_a7a2eed8ed18926feb5877dca9dfe7eb68f41f14d7978602e2412cf8a751a516 = $this->env->getExtension("native_profiler");
+        $__internal_a7a2eed8ed18926feb5877dca9dfe7eb68f41f14d7978602e2412cf8a751a516->enter($__internal_a7a2eed8ed18926feb5877dca9dfe7eb68f41f14d7978602e2412cf8a751a516_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":job:new.html.twig"));
 
+        // line 3
+        $this->env->getExtension('form')->renderer->setTheme((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), array(0 => $this));
+        // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_53be809b7e857cf4dc1d829bc25b3e7869b1e9b66da270b0fdb1fe743b0f505e->leave($__internal_53be809b7e857cf4dc1d829bc25b3e7869b1e9b66da270b0fdb1fe743b0f505e_prof);
+        $__internal_a7a2eed8ed18926feb5877dca9dfe7eb68f41f14d7978602e2412cf8a751a516->leave($__internal_a7a2eed8ed18926feb5877dca9dfe7eb68f41f14d7978602e2412cf8a751a516_prof);
 
     }
 
-    // line 3
-    public function block_body($context, array $blocks = array())
+    // line 5
+    public function block_field_errors($context, array $blocks = array())
     {
-        $__internal_5ceb690211a04a1be229c6501e32d9c9e07a2360a013852e6c05a2b1bb2379f4 = $this->env->getExtension("native_profiler");
-        $__internal_5ceb690211a04a1be229c6501e32d9c9e07a2360a013852e6c05a2b1bb2379f4->enter($__internal_5ceb690211a04a1be229c6501e32d9c9e07a2360a013852e6c05a2b1bb2379f4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_860215503590bfb2fe67b09cd70b911ac932cd87126b8072b75889b97536f379 = $this->env->getExtension("native_profiler");
+        $__internal_860215503590bfb2fe67b09cd70b911ac932cd87126b8072b75889b97536f379->enter($__internal_860215503590bfb2fe67b09cd70b911ac932cd87126b8072b75889b97536f379_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "field_errors"));
 
-        // line 4
-        echo "    <h1>Job creation</h1>
-
-    ";
         // line 6
-        echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start');
-        echo "
-        ";
+        ob_start();
         // line 7
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'widget');
-        echo "
-        <input type=\"submit\" value=\"Create\" />
-    ";
-        // line 9
-        echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
-        echo "
+        echo "  ";
+        if ((twig_length_filter($this->env, (isset($context["errors"]) ? $context["errors"] : $this->getContext($context, "errors"))) > 0)) {
+            // line 8
+            echo "    <ul class=\"error_list\">
+      ";
+            // line 9
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["errors"]) ? $context["errors"] : $this->getContext($context, "errors")));
+            foreach ($context['_seq'] as $context["_key"] => $context["error"]) {
+                // line 10
+                echo "        <li>";
+                echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans($this->getAttribute($context["error"], "messageTemplate", array()), $this->getAttribute($context["error"], "messageParameters", array()), "validators"), "html", null, true);
+                echo "</li>
+      ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['error'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 12
+            echo "    </ul>
+  ";
+        }
+        echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
+        
+        $__internal_860215503590bfb2fe67b09cd70b911ac932cd87126b8072b75889b97536f379->leave($__internal_860215503590bfb2fe67b09cd70b911ac932cd87126b8072b75889b97536f379_prof);
 
-    <ul>
-        <li>
-            <a href=\"";
-        // line 13
-        echo $this->env->getExtension('routing')->getPath("ens_job_index");
-        echo "\">Back to the list</a>
-        </li>
-    </ul>
+    }
+
+    // line 17
+    public function block_stylesheets($context, array $blocks = array())
+    {
+        $__internal_fb796e388bec4b6c9a96ee7627f6f8a1ac81b53452aa3367c56dc0a5f18b55bc = $this->env->getExtension("native_profiler");
+        $__internal_fb796e388bec4b6c9a96ee7627f6f8a1ac81b53452aa3367c56dc0a5f18b55bc->enter($__internal_fb796e388bec4b6c9a96ee7627f6f8a1ac81b53452aa3367c56dc0a5f18b55bc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+
+        // line 18
+        echo "  ";
+        $this->displayParentBlock("stylesheets", $context, $blocks);
+        echo "
+  <link rel=\"stylesheet\" href=\"";
+        // line 19
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/css/job.css"), "html", null, true);
+        echo "\" type=\"text/css\" media=\"all\" />
 ";
         
-        $__internal_5ceb690211a04a1be229c6501e32d9c9e07a2360a013852e6c05a2b1bb2379f4->leave($__internal_5ceb690211a04a1be229c6501e32d9c9e07a2360a013852e6c05a2b1bb2379f4_prof);
+        $__internal_fb796e388bec4b6c9a96ee7627f6f8a1ac81b53452aa3367c56dc0a5f18b55bc->leave($__internal_fb796e388bec4b6c9a96ee7627f6f8a1ac81b53452aa3367c56dc0a5f18b55bc_prof);
+
+    }
+
+    // line 22
+    public function block_body($context, array $blocks = array())
+    {
+        $__internal_bd9edcbf4351ef4c49501c030c371aeded380342092588daa8cdb6e5254a1c92 = $this->env->getExtension("native_profiler");
+        $__internal_bd9edcbf4351ef4c49501c030c371aeded380342092588daa8cdb6e5254a1c92->enter($__internal_bd9edcbf4351ef4c49501c030c371aeded380342092588daa8cdb6e5254a1c92_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+
+        // line 23
+        echo "  <h1>Job creation</h1>
+  <form action=\"";
+        // line 24
+        echo $this->env->getExtension('routing')->getPath("ens_job_new");
+        echo "\" method=\"post\" ";
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'enctype');
+        echo ">
+    <table id=\"job_form\">
+      <tfoot>
+        <tr>
+          <td colspan=\"2\">
+            <input type=\"submit\" value=\"Preview your job\" />
+          </td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <th>";
+        // line 35
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "category", array()), 'label');
+        echo "</th>
+          <td>
+            ";
+        // line 37
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "category", array()), 'errors');
+        echo "
+            ";
+        // line 38
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "category", array()), 'widget');
+        echo "
+          </td>
+        </tr>
+        <tr>
+          <th>";
+        // line 42
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "type", array()), 'label');
+        echo "</th>
+          <td>
+            ";
+        // line 44
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "type", array()), 'errors');
+        echo "
+            ";
+        // line 45
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "type", array()), 'widget');
+        echo "
+          </td>
+        </tr>
+        <tr>
+          <th>";
+        // line 49
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "company", array()), 'label');
+        echo "</th>
+          <td>
+            ";
+        // line 51
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "company", array()), 'errors');
+        echo "
+            ";
+        // line 52
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "company", array()), 'widget');
+        echo "
+          </td>
+        </tr>
+        <tr>
+          <th>";
+        // line 56
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "file", array()), 'label');
+        echo "</th>
+          <td>
+            ";
+        // line 58
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "file", array()), 'errors');
+        echo "
+            ";
+        // line 59
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "file", array()), 'widget');
+        echo "
+          </td>
+        </tr>
+        <tr>
+          <th>";
+        // line 63
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "url", array()), 'label');
+        echo "</th>
+          <td>
+            ";
+        // line 65
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "url", array()), 'errors');
+        echo "
+            ";
+        // line 66
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "url", array()), 'widget');
+        echo "
+          </td>
+        </tr>
+        <tr>
+          <th>";
+        // line 70
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "position", array()), 'label');
+        echo "</th>
+          <td>
+            ";
+        // line 72
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "position", array()), 'errors');
+        echo "
+            ";
+        // line 73
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "position", array()), 'widget');
+        echo "
+          </td>
+        </tr>
+        <tr>
+          <th>";
+        // line 77
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "location", array()), 'label');
+        echo "</th>
+          <td>
+            ";
+        // line 79
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "location", array()), 'errors');
+        echo "
+            ";
+        // line 80
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "location", array()), 'widget');
+        echo "
+          </td>
+        </tr>
+        <tr>
+          <th>";
+        // line 84
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "description", array()), 'label');
+        echo "</th>
+          <td>
+            ";
+        // line 86
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "description", array()), 'errors');
+        echo "
+            ";
+        // line 87
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "description", array()), 'widget');
+        echo "
+          </td>
+        </tr>
+        <tr>
+          <th>";
+        // line 91
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "how_to_apply", array()), 'label');
+        echo "</th>
+          <td>
+            ";
+        // line 93
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "how_to_apply", array()), 'errors');
+        echo "
+            ";
+        // line 94
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "how_to_apply", array()), 'widget');
+        echo "
+          </td>
+        </tr>
+        <tr>
+          <th>";
+        // line 98
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "token", array()), 'label');
+        echo "</th>
+          <td>
+            ";
+        // line 100
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "token", array()), 'errors');
+        echo "
+            ";
+        // line 101
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "token", array()), 'widget');
+        echo "
+          </td>
+        </tr>
+        <tr>
+          <th>";
+        // line 105
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "is_public", array()), 'label');
+        echo "</th>
+          <td>
+            ";
+        // line 107
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "is_public", array()), 'errors');
+        echo "
+            ";
+        // line 108
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "is_public", array()), 'widget');
+        echo "
+            <br /> Whether the job can also be published on affiliate websites or not.
+          </td>
+        </tr>
+        <tr>
+          <th>";
+        // line 113
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'label');
+        echo "</th>
+          <td>
+            ";
+        // line 115
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'errors');
+        echo "
+            ";
+        // line 116
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'widget');
+        echo "
+          </td>
+        </tr>
+      </tbody>
+    </table>
+ 
+    ";
+        // line 122
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'rest');
+        echo "
+  </form>
+";
+        
+        $__internal_bd9edcbf4351ef4c49501c030c371aeded380342092588daa8cdb6e5254a1c92->leave($__internal_bd9edcbf4351ef4c49501c030c371aeded380342092588daa8cdb6e5254a1c92_prof);
 
     }
 
@@ -79,23 +334,131 @@ class __TwigTemplate_73dded22e503bf237c6d8b1898778fed1716b7a580fd362137c18bdb704
 
     public function getDebugInfo()
     {
-        return array (  60 => 13,  53 => 9,  48 => 7,  44 => 6,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  316 => 122,  307 => 116,  303 => 115,  298 => 113,  290 => 108,  286 => 107,  281 => 105,  274 => 101,  270 => 100,  265 => 98,  258 => 94,  254 => 93,  249 => 91,  242 => 87,  238 => 86,  233 => 84,  226 => 80,  222 => 79,  217 => 77,  210 => 73,  206 => 72,  201 => 70,  194 => 66,  190 => 65,  185 => 63,  178 => 59,  174 => 58,  169 => 56,  162 => 52,  158 => 51,  153 => 49,  146 => 45,  142 => 44,  137 => 42,  130 => 38,  126 => 37,  121 => 35,  105 => 24,  102 => 23,  96 => 22,  87 => 19,  82 => 18,  76 => 17,  66 => 12,  57 => 10,  53 => 9,  50 => 8,  47 => 7,  45 => 6,  39 => 5,  32 => 1,  30 => 3,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
 /* */
-/* {% block body %}*/
-/*     <h1>Job creation</h1>*/
-/* */
-/*     {{ form_start(form) }}*/
-/*         {{ form_widget(form) }}*/
-/*         <input type="submit" value="Create" />*/
-/*     {{ form_end(form) }}*/
-/* */
-/*     <ul>*/
-/*         <li>*/
-/*             <a href="{{ path('ens_job_index') }}">Back to the list</a>*/
-/*         </li>*/
+/* {% form_theme form _self %}*/
+/*  */
+/* {% block field_errors %}*/
+/* {% spaceless %}*/
+/*   {% if errors|length > 0 %}*/
+/*     <ul class="error_list">*/
+/*       {% for error in errors %}*/
+/*         <li>{{ error.messageTemplate|trans(error.messageParameters, 'validators') }}</li>*/
+/*       {% endfor %}*/
 /*     </ul>*/
+/*   {% endif %}*/
+/* {% endspaceless %}*/
+/* {% endblock field_errors %}*/
+/*  */
+/* {% block stylesheets %}*/
+/*   {{ parent() }}*/
+/*   <link rel="stylesheet" href="{{ asset('bundles/ensjobeet/css/job.css') }}" type="text/css" media="all" />*/
+/* {% endblock %}*/
+/* */
+/* {% block body %}*/
+/*   <h1>Job creation</h1>*/
+/*   <form action="{{ path('ens_job_new') }}" method="post" {{ form_enctype(form) }}>*/
+/*     <table id="job_form">*/
+/*       <tfoot>*/
+/*         <tr>*/
+/*           <td colspan="2">*/
+/*             <input type="submit" value="Preview your job" />*/
+/*           </td>*/
+/*         </tr>*/
+/*       </tfoot>*/
+/*       <tbody>*/
+/*         <tr>*/
+/*           <th>{{ form_label(form.category) }}</th>*/
+/*           <td>*/
+/*             {{ form_errors(form.category) }}*/
+/*             {{ form_widget(form.category) }}*/
+/*           </td>*/
+/*         </tr>*/
+/*         <tr>*/
+/*           <th>{{ form_label(form.type) }}</th>*/
+/*           <td>*/
+/*             {{ form_errors(form.type) }}*/
+/*             {{ form_widget(form.type) }}*/
+/*           </td>*/
+/*         </tr>*/
+/*         <tr>*/
+/*           <th>{{ form_label(form.company) }}</th>*/
+/*           <td>*/
+/*             {{ form_errors(form.company) }}*/
+/*             {{ form_widget(form.company) }}*/
+/*           </td>*/
+/*         </tr>*/
+/*         <tr>*/
+/*           <th>{{ form_label(form.file) }}</th>*/
+/*           <td>*/
+/*             {{ form_errors(form.file) }}*/
+/*             {{ form_widget(form.file) }}*/
+/*           </td>*/
+/*         </tr>*/
+/*         <tr>*/
+/*           <th>{{ form_label(form.url) }}</th>*/
+/*           <td>*/
+/*             {{ form_errors(form.url) }}*/
+/*             {{ form_widget(form.url) }}*/
+/*           </td>*/
+/*         </tr>*/
+/*         <tr>*/
+/*           <th>{{ form_label(form.position) }}</th>*/
+/*           <td>*/
+/*             {{ form_errors(form.position) }}*/
+/*             {{ form_widget(form.position) }}*/
+/*           </td>*/
+/*         </tr>*/
+/*         <tr>*/
+/*           <th>{{ form_label(form.location) }}</th>*/
+/*           <td>*/
+/*             {{ form_errors(form.location) }}*/
+/*             {{ form_widget(form.location) }}*/
+/*           </td>*/
+/*         </tr>*/
+/*         <tr>*/
+/*           <th>{{ form_label(form.description) }}</th>*/
+/*           <td>*/
+/*             {{ form_errors(form.description) }}*/
+/*             {{ form_widget(form.description) }}*/
+/*           </td>*/
+/*         </tr>*/
+/*         <tr>*/
+/*           <th>{{ form_label(form.how_to_apply) }}</th>*/
+/*           <td>*/
+/*             {{ form_errors(form.how_to_apply) }}*/
+/*             {{ form_widget(form.how_to_apply) }}*/
+/*           </td>*/
+/*         </tr>*/
+/*         <tr>*/
+/*           <th>{{ form_label(form.token) }}</th>*/
+/*           <td>*/
+/*             {{ form_errors(form.token) }}*/
+/*             {{ form_widget(form.token) }}*/
+/*           </td>*/
+/*         </tr>*/
+/*         <tr>*/
+/*           <th>{{ form_label(form.is_public) }}</th>*/
+/*           <td>*/
+/*             {{ form_errors(form.is_public) }}*/
+/*             {{ form_widget(form.is_public) }}*/
+/*             <br /> Whether the job can also be published on affiliate websites or not.*/
+/*           </td>*/
+/*         </tr>*/
+/*         <tr>*/
+/*           <th>{{ form_label(form.email) }}</th>*/
+/*           <td>*/
+/*             {{ form_errors(form.email) }}*/
+/*             {{ form_widget(form.email) }}*/
+/*           </td>*/
+/*         </tr>*/
+/*       </tbody>*/
+/*     </table>*/
+/*  */
+/*     {{ form_rest(form) }}*/
+/*   </form>*/
 /* {% endblock %}*/
 /* */

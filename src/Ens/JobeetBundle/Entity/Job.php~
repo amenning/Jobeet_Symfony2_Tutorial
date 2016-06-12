@@ -9,6 +9,8 @@ use Ens\JobeetBundle\Utils\Jobeet as Jobeet;
  */
 class Job
 {
+	public $file;
+	
     /**
      * @var integer
      */
@@ -95,6 +97,26 @@ class Job
     private $category;
 
 
+	protected function getUploadDir()
+	{
+		return 'uploads/jobs';
+	}
+	
+	protected function getUploadRootDir()
+	{
+		return __DIR__.'/../../../../web/'.$this->getUploadDir();
+	}
+	
+	public function getWebPath()
+	{
+		return null === $this->logo ? null : $this->getUploadDir().'/'.$this->logo;
+	}
+	
+	public function getAbsolutePath()
+	{
+		return null === $this->logo ? null : $this->getUploadRootDir().'/'.$this->logo;
+	}
+	
     /**
      * Get id
      *
@@ -472,6 +494,22 @@ class Job
     {
         return $this->category;
     }
+	
+	
+	public static function getTypes()
+	{
+		return array(
+			'full-time' => 'Full time',
+			'part-time' => 'Part time',
+			'freelance' => 'Freelance'
+		);
+	}
+	
+	public static function getTypeValues()
+	{
+		return array_keys(self::getTypes());
+	}
+	
     /**
      * @ORM\PrePersist
      */

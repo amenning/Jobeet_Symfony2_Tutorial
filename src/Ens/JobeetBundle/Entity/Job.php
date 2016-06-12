@@ -9,6 +9,8 @@ use Ens\JobeetBundle\Utils\Jobeet as Jobeet;
  */
 class Job
 {
+	public $file;
+	
     /**
      * @var integer
      */
@@ -95,6 +97,26 @@ class Job
     private $category;
 
 
+	protected function getUploadDir()
+	{
+		return 'uploads/jobs';
+	}
+	
+	protected function getUploadRootDir()
+	{
+		return __DIR__.'/../../../../web/'.$this->getUploadDir();
+	}
+	
+	public function getWebPath()
+	{
+		return null === $this->logo ? null : $this->getUploadDir().'/'.$this->logo;
+	}
+	
+	public function getAbsolutePath()
+	{
+		return null === $this->logo ? null : $this->getUploadRootDir().'/'.$this->logo;
+	}
+	
     /**
      * Get id
      *
@@ -532,5 +554,43 @@ class Job
 			$now = $this->getCreatedAt() ? $this->getCreatedAt()->format('U') : time();
 			$this->expires_at = new \DateTime(date('Y-m-d H:i:s', $now + 86400 * 30));
 		}
+    }
+
+    /**
+     * @ORM\PrePersist
+     */
+    public function preUpload()
+    {
+        if(null !== $this->file) {
+        	// do whatever you want to generate a unique name
+        	$this->logo = uniqid().'.'.$this->file->guessExtension();
+        }
+    }
+
+    /**
+     * @ORM\PostPersist
+     */
+    public function upload()
+    {
+    	if(null === $this->file){
+    		return;
+    	}
+		
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->file->move($this->getUploadRootDir(), $this->logo);
+		
+		unset($this->file);
+    }
+
+    /**
+     * @ORM\PostRemove
+     */
+    public function removeUpload()
+    {
+        if($file = $this->getAbsolutePath()){
+        	unlink($file);
+        }
     }
 }

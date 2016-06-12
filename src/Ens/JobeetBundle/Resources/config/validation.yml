@@ -2,6 +2,8 @@ Ens\JobeetBundle\Entity\Job:
   properties:
     category:
       - NotBlank: ~
+    file:
+      - Image: ~
     type:
       - NotBlank: ~
       - Choice: { callback: getTypeValues }
