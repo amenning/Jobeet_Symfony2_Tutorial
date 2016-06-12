@@ -1362,6 +1362,11 @@
           <argument>C:\xampp\htdocs\Jobeet_Tutorial\jobeet\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/config/validation.xml</argument>
         </argument>
       </call>
+      <call method="addYamlMappings">
+        <argument type="collection">
+          <argument>C:\xampp\htdocs\Jobeet_Tutorial\jobeet\src\Ens\JobeetBundle\Resources\config\validation.yml</argument>
+        </argument>
+      </call>
       <call method="enableAnnotationMapping">
         <argument type="service" id="annotation_reader"/>
       </call>
@@ -1779,7 +1784,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>575c13da991041.73950929</argument>
+            <argument>575d6a2bdf5565.38625947</argument>
           </service>
         </argument>
       </argument>
@@ -1908,7 +1913,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>575c13da991041.73950929</argument>
+            <argument>575d6a2bdf5565.38625947</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>

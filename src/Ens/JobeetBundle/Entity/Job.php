@@ -472,6 +472,22 @@ class Job
     {
         return $this->category;
     }
+	
+	
+	public static function getTypes()
+	{
+		return array(
+			'full-time' => 'Full time',
+			'part-time' => 'Part time',
+			'freelance' => 'Freelance'
+		);
+	}
+	
+	public static function getTypeValues()
+	{
+		return array_keys(self::getTypes());
+	}
+	
     /**
      * @ORM\PrePersist
      */
