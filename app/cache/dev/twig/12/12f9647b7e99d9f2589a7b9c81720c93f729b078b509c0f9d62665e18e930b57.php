@@ -15,8 +15,8 @@ class __TwigTemplate_5827cd9e24e98279b2f33bc33bd877f8a9819a9bd8a8ac0a5408e0a1647
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f2c7bbaa38ad070d487d55b2f2e57e7cf8b701350c8c07ec8f50354194de12e3 = $this->env->getExtension("native_profiler");
-        $__internal_f2c7bbaa38ad070d487d55b2f2e57e7cf8b701350c8c07ec8f50354194de12e3->enter($__internal_f2c7bbaa38ad070d487d55b2f2e57e7cf8b701350c8c07ec8f50354194de12e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EnsJobeetBundle:Job:admin.html.twig"));
+        $__internal_86db54ba9c8723d8a4303b12ca9bbb8b73732dae3cbd9dda73b49058d383a228 = $this->env->getExtension("native_profiler");
+        $__internal_86db54ba9c8723d8a4303b12ca9bbb8b73732dae3cbd9dda73b49058d383a228->enter($__internal_86db54ba9c8723d8a4303b12ca9bbb8b73732dae3cbd9dda73b49058d383a228_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EnsJobeetBundle:Job:admin.html.twig"));
 
         // line 1
         echo "<div id=\"job_actions\">
@@ -29,74 +29,82 @@ class __TwigTemplate_5827cd9e24e98279b2f33bc33bd877f8a9819a9bd8a8ac0a5408e0a1647
             echo "      <li><a href=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ens_job_edit", array("token" => $this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "token", array()))), "html", null, true);
             echo "\">Edit</a></li>
-      <li><a href=\"";
-            // line 6
-            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ens_job_edit", array("token" => $this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "token", array()))), "html", null, true);
-            echo "\">Publish</a></li>
+      <li>
+      \t<form action=\"";
+            // line 7
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ens_job_publish", array("token" => $this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "token", array()))), "html", null, true);
+            echo "\" method=\"post\">
+      \t\t";
+            // line 8
+            echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["publish_form"]) ? $context["publish_form"] : $this->getContext($context, "publish_form")), 'widget');
+            echo "
+      \t\t<button type=\"submit\">Publish</button>
+      \t</form>
+      </li>
     ";
         }
-        // line 8
+        // line 13
         echo "    <li>
       <form action=\"";
-        // line 9
+        // line 14
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("ens_job_delete", array("token" => $this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "token", array()))), "html", null, true);
         echo "\" method=\"post\">
         ";
-        // line 10
+        // line 15
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["delete_form"]) ? $context["delete_form"] : $this->getContext($context, "delete_form")), 'widget');
         echo "
         <button type=\"submit\" onclick=\"if(!confirm('Are you sure?')) { return false; }\">Delete</button>
       </form>
     </li>
     ";
-        // line 14
+        // line 19
         if ($this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "isActivated", array())) {
-            // line 15
+            // line 20
             echo "      <li ";
             if ($this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "expiresSoon", array())) {
                 echo " class=\"expires_soon\" ";
             }
             echo ">
         ";
-            // line 16
+            // line 21
             if ($this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "isExpired", array())) {
-                // line 17
+                // line 22
                 echo "          Expired
         ";
             } else {
-                // line 19
+                // line 24
                 echo "          Expires in <strong>";
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "getDaysBeforeExpires", array()), "html", null, true);
                 echo "</strong> days
         ";
             }
-            // line 21
+            // line 26
             echo " 
         ";
-            // line 22
+            // line 27
             if ($this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "expiresSoon", array())) {
-                // line 23
+                // line 28
                 echo "          - <a href=\"\">Extend</a> for another 30 days
         ";
             }
-            // line 25
+            // line 30
             echo "      </li>
     ";
         } else {
-            // line 27
+            // line 32
             echo "      <li>
         [Bookmark this <a href=\"";
-            // line 28
+            // line 33
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getUrl("ens_job_preview", array("token" => $this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "token", array()), "company" => $this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "companyslug", array()), "location" => $this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "locationslug", array()), "position" => $this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "positionslug", array()))), "html", null, true);
             echo "\">URL</a> to manage this job in the future.]
       </li>
     ";
         }
-        // line 31
+        // line 36
         echo "  </ul>
 </div>";
         
-        $__internal_f2c7bbaa38ad070d487d55b2f2e57e7cf8b701350c8c07ec8f50354194de12e3->leave($__internal_f2c7bbaa38ad070d487d55b2f2e57e7cf8b701350c8c07ec8f50354194de12e3_prof);
+        $__internal_86db54ba9c8723d8a4303b12ca9bbb8b73732dae3cbd9dda73b49058d383a228->leave($__internal_86db54ba9c8723d8a4303b12ca9bbb8b73732dae3cbd9dda73b49058d383a228_prof);
 
     }
 
@@ -112,7 +120,7 @@ class __TwigTemplate_5827cd9e24e98279b2f33bc33bd877f8a9819a9bd8a8ac0a5408e0a1647
 
     public function getDebugInfo()
     {
-        return array (  96 => 31,  90 => 28,  87 => 27,  83 => 25,  79 => 23,  77 => 22,  74 => 21,  68 => 19,  64 => 17,  62 => 16,  55 => 15,  53 => 14,  46 => 10,  42 => 9,  39 => 8,  34 => 6,  29 => 5,  27 => 4,  22 => 1,);
+        return array (  104 => 36,  98 => 33,  95 => 32,  91 => 30,  87 => 28,  85 => 27,  82 => 26,  76 => 24,  72 => 22,  70 => 21,  63 => 20,  61 => 19,  54 => 15,  50 => 14,  47 => 13,  39 => 8,  35 => 7,  29 => 5,  27 => 4,  22 => 1,);
     }
 }
 /* <div id="job_actions">*/
@@ -120,7 +128,12 @@ class __TwigTemplate_5827cd9e24e98279b2f33bc33bd877f8a9819a9bd8a8ac0a5408e0a1647
 /*   <ul>*/
 /*     {% if not job.isActivated %}*/
 /*       <li><a href="{{ path('ens_job_edit', { 'token': job.token }) }}">Edit</a></li>*/
-/*       <li><a href="{{ path('ens_job_edit', { 'token': job.token }) }}">Publish</a></li>*/
+/*       <li>*/
+/*       	<form action="{{ path('ens_job_publish', { 'token':job.token }) }}" method="post">*/
+/*       		{{ form_widget(publish_form) }}*/
+/*       		<button type="submit">Publish</button>*/
+/*       	</form>*/
+/*       </li>*/
 /*     {% endif %}*/
 /*     <li>*/
 /*       <form action="{{ path('ens_job_delete', { 'token': job.token }) }}" method="post">*/

@@ -100,12 +100,52 @@ class JobController extends Controller
     	}
 		        	
         $deleteForm = $this->createDeleteForm($job_check);
+		$publishForm = $this->createPublishForm($job_check);
 
         return $this->render('job/show.html.twig', array(
             'job' => $job_check,
             'delete_form' => $deleteForm->createView(),
+            'publish_form' => $publishForm->createView(),
         ));
     }
+	
+	public function publishAction(Job $job)
+	{
+		$form = $this->createPublishForm($job);
+		$request = $this->getRequest();
+		
+		$form->handleRequest($request);
+		
+		if($form->isSubmitted() && $form->isValid()) {
+			$em = $this->getDoctrine()->getManager();
+			$job_check = $em->getRepository('EnsJobeetBundle:Job')->findOneByToken($job->getToken());
+			
+			if(!$job_check) {
+				throw $this->createNotFoundException('Unable to find Job entity.');
+			}
+			
+			$job_check->publish();
+			$em->persist($job_check);
+			$em->flush();
+			
+			$this->get('session')->getFlashBag()->add('notice', 'Your job is now online for 30 days.');
+		}
+		
+		return $this->redirect($this->generateUrl('ens_job_preview', array(
+			'company' => $job_check->getCompanySlug(),
+			'location' => $job_check->getLocationSlug(),
+			'token' => $job_check->getToken(),
+			'position' => $job_check->getPositionSlug()
+		)));
+	}
+	
+	private function createPublishForm($job)
+	{
+		return $this->createFormBuilder(array('token' => $job->getToken()))
+			->add('token', 'hidden')
+			->getForm()
+		;
+	}
 
     /**
      * Displays a form to edit an existing Job entity.

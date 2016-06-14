@@ -139,6 +139,11 @@ class Job
 		return null === $this->logo ? null : $this->getUploadRootDir().'/'.$this->logo;
 	}
 	
+	public function publish()
+	{
+		$this->setIsActivated(true);
+	}
+	
     /**
      * Get id
      *
