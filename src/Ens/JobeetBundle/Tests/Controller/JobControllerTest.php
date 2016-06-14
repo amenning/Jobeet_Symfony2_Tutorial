@@ -74,6 +74,14 @@ class JobControllerTest extends WebTestCase
 		$crawler = $client->request('GET', sprintf('/job/sensio-labs/paris-france/%d/web-developer', $this->getExpiredJob()->getId()));
 		$this->assertTrue(404 === $client->getResponse()->getStatusCode());
 	}
+
+	public function testJobForm()
+	{
+		$client = static::createClient();
+		
+		$crawler = $client->request('GET', '/job/new/');
+		$this->assertEquals('Ens\JobeetBundle\Controller\JobController::newAction', $client->getRequest()->attributes->get('_controller'));
+	}
 	
     /*
     public function testCompleteScenario()

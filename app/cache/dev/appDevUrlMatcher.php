@@ -156,8 +156,8 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
             // ens_job_delete
             if (preg_match('#^/job/(?P<token>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                if ($this->context->getMethod() != 'DELETE') {
-                    $allow[] = 'DELETE';
+                if ($this->context->getMethod() != 'POST') {
+                    $allow[] = 'POST';
                     goto not_ens_job_delete;
                 }
 

@@ -203,7 +203,7 @@ class JobController extends Controller
         		throw $this->createNotFoundException('Unable to find job entity.');
     		}	
             
-            $em->remove($job);
+            $em->remove($job_check);
             $em->flush();
         }
 
