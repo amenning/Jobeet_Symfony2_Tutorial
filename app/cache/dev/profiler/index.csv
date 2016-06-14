@@ -3,3 +3,10 @@
 07cffb,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/job_extreme_sensio/edit,1465754873,,200
 686b81,127.0.0.1,POST,http://jobeet.local/app_dev.php/job/job_extreme_sensio/edit,1465754883,,302
 fe6ebc,127.0.0.1,GET,"http://jobeet.local/app_dev.php/job/Extreme%20Sensio/Paris,%20France/job_extreme_sensio/Web%20Designer?id=2",1465754886,,200
+738229,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/job_extreme_sensio/edit,1465755237,,200
+99824c,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/new,1465755245,,200
+d1d423,127.0.0.1,POST,http://jobeet.local/app_dev.php/job/new,1465755265,,302
+d21706,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/test/test/45923f6063ab63de744e923926349fb756ef8264/test?id=35,1465755265,,200
+250578,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/,1465756023,,200
+fcc3cc,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/sensio-labs/paris-france/1/web-developer,1465756028,,200
+3ac493,127.0.0.1,GET,http://jobeet.local/app_dev.php/,1465756044,,200

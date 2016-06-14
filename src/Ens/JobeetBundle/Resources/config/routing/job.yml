@@ -31,3 +31,8 @@ ens_job_preview:
     methods:  GET
     requirements:
       token: \w+
+
+ens_job_publish:
+    path:     /{token}/publish
+    defaults: {_controller:"EnsJobeetBundle:Job:publish" }
+    methods:  POST
