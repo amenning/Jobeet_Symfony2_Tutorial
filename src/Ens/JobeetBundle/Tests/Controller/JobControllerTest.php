@@ -80,9 +80,11 @@ class JobControllerTest extends WebTestCase
 	{
 		$client = static::createClient();
 		
+		// test new job path uses newAction controller
 		$crawler = $client->request('GET', '/job/new');
 		$this->assertEquals('Ens\JobeetBundle\Controller\JobController::newAction', $client->getRequest()->attributes->get('_controller'));
 		
+		// test new job form submission with file upload
 		$file = new UploadedFile(
 			__DIR__.'/../../../../../web/bundles/ensjobeet/images/sensio-labs.gif',
 			'sensio-labs.gif',
@@ -106,6 +108,15 @@ class JobControllerTest extends WebTestCase
 		
 		$client->followRedirect();
 		$this->assertEquals('Ens\JobeetBundle\Controller\JobController::previewAction', $client->getRequest()->attributes->get('_controller'));
+		
+		// testing for the new job database record
+		$kernel = static::createKernel();
+		$kernel->boot();
+		$em = $kernel->getContainer()->get('doctrine.orm.entity_manager');
+		
+		$query = $em->createQuery('SELECT count(j.id) from EnsJobeetBundle:Job j WHERE j.location = :location AND j.is_activated IS NULL AND j.is_public = 0');
+		$query->setParameter('location', 'Atlanta, USA');
+		$this->assertTrue(0 < $query->getSingleScalarResult());
 	}
 	
     /*
