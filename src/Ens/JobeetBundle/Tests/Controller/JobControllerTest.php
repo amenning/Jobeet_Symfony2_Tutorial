@@ -3,6 +3,7 @@
 namespace Ens\JobeetBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class JobControllerTest extends WebTestCase
 {
@@ -79,8 +80,32 @@ class JobControllerTest extends WebTestCase
 	{
 		$client = static::createClient();
 		
-		$crawler = $client->request('GET', '/job/new/');
+		$crawler = $client->request('GET', '/job/new');
 		$this->assertEquals('Ens\JobeetBundle\Controller\JobController::newAction', $client->getRequest()->attributes->get('_controller'));
+		
+		$file = new UploadedFile(
+			__DIR__.'/../../../../../web/bundles/ensjobeet/images/sensio-labs.gif',
+			'sensio-labs.gif',
+			'image/gif'
+		);
+		
+		$form = $crawler->selectButton('Preview your job')->form(array(
+			'job[company]'		=> 'Sensio Labs',
+			'job[url]'			=> 'http://www.sensio.com',
+			'job[file]'			=> $file,
+			'job[position]'		=> 'Developer',
+			'job[location]'		=> 'Atlanta, USA',
+			'job[description]'	=> 'You will work with symfony to develop websites for our customers.',
+			'job[how_to_apply]'	=> 'Send me an email',
+			'job[email]'		=> 'for.a.job@example.com',
+			'job[is_public]'	=> false,
+		));
+		
+		$client->submit($form);
+		$this->assertEquals('Ens\JobeetBundle\Controller\JobController::newAction', $client->getRequest()->attributes->get('_controller'));
+		
+		$client->followRedirect();
+		$this->assertEquals('Ens\JobeetBundle\Controller\JobController::previewAction', $client->getRequest()->attributes->get('_controller'));
 	}
 	
     /*
