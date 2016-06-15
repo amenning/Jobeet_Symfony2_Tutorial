@@ -6,7 +6,7 @@
       <li>
       	<form action="{{ path('ens_job_publish', { 'token':job.token }) }}" method="post">
       		{{ form_widget(publish_form) }}
-      		<button type="submit">Publish</button>
+      		<input type="submit" value="Publish" />
       	</form>
       </li>
     {% endif %}

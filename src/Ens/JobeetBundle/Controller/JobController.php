@@ -53,11 +53,10 @@ class JobController extends Controller
             $em->flush();
 
             return $this->redirectToRoute('ens_job_preview', array(
-            	'id' => $job->getId(),
-				'company' => $job->getCompanySlug(),
-				'location' => $job->getLocationSlug(),
+            	'company' => $job->getCompany(),
+				'location' => $job->getLocation(),
 				'token' => $job->getToken(),
-				'position' => $job->getPositionSlug()
+				'position' => $job->getPosition()
 			));
         }
 
@@ -132,10 +131,10 @@ class JobController extends Controller
 		}
 		
 		return $this->redirect($this->generateUrl('ens_job_preview', array(
-			'company' => $job_check->getCompanySlug(),
-			'location' => $job_check->getLocationSlug(),
+			'company' => $job_check->getCompany(),
+			'location' => $job_check->getLocation(),
 			'token' => $job_check->getToken(),
-			'position' => $job_check->getPositionSlug()
+			'position' => $job_check->getPosition()
 		)));
 	}
 	

@@ -33,6 +33,27 @@ class JobControllerTest extends WebTestCase
 		return $query->getSingleResult();
 	}
 
+	public function createJob($values = array())
+	{
+		$client = static::createClient();
+		$crawler = $client->request('GET', '/job/new');
+	    $form = $crawler->selectButton('Preview your job')->form(array_merge(array(
+	      'job[company]'      => 'Sensio Labs',
+	      'job[url]'          => 'http://www.sensio.com/',
+	      'job[position]'     => 'Developer',
+	      'job[location]'     => 'Atlanta, USA',
+	      'job[description]'  => 'You will work with symfony to develop websites for our customers.',
+	      'job[how_to_apply]' => 'Send me an email',
+	      'job[email]'        => 'for.a.job@example.com',
+	     'job[is_public]'    => false,
+	    ), $values));
+		
+		$client->submit($form);
+		$client->followRedirect();
+		
+		return $client;
+	}
+
 	public function testIndex()
 	{
 		// get the custom parameters from app config.yml
@@ -102,11 +123,11 @@ class JobControllerTest extends WebTestCase
 			'job[email]'		=> 'for.a.job@example.com',
 			'job[is_public]'	=> false,
 		));
-		
+				
 		$client->submit($form);
 		$this->assertEquals('Ens\JobeetBundle\Controller\JobController::newAction', $client->getRequest()->attributes->get('_controller'));
-		
-		$client->followRedirect();
+							
+		$client->followRedirect(true);
 		$this->assertEquals('Ens\JobeetBundle\Controller\JobController::previewAction', $client->getRequest()->attributes->get('_controller'));
 		
 		// testing for the new job database record
@@ -116,6 +137,22 @@ class JobControllerTest extends WebTestCase
 		
 		$query = $em->createQuery('SELECT count(j.id) from EnsJobeetBundle:Job j WHERE j.location = :location AND j.is_activated IS NULL AND j.is_public = 0');
 		$query->setParameter('location', 'Atlanta, USA');
+		$this->assertTrue(0 < $query->getSingleScalarResult());	
+	}
+
+	public function testPublishJob()
+	{
+		$client = $this->createJob(array('job[position]' => 'FOO1'));
+		$crawler = $client->getCrawler();
+		$form = $crawler->selectButton('Publish')->form();
+		$client->submit($form);
+				
+		$kernel = static::createKernel();
+		$kernel->boot();
+		$em = $kernel->getContainer()->get('doctrine.orm.entity_manager');
+		
+		$query = $em->createQuery('SELECT count(j.id) from EnsJobeetBundle:Job j WHERE j.position = :position AND j.is_activated = 1');
+		$query->setParameter('position', 'FOO1');
 		$this->assertTrue(0 < $query->getSingleScalarResult());
 	}
 	
