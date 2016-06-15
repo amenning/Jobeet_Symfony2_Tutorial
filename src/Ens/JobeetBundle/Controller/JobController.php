@@ -53,10 +53,10 @@ class JobController extends Controller
             $em->flush();
 
             return $this->redirectToRoute('ens_job_preview', array(
-            	'company' => $job->getCompany(),
-				'location' => $job->getLocation(),
+            	'company' => $job->getCompanySlug(),
+				'location' => $job->getLocationSlug(),
 				'token' => $job->getToken(),
-				'position' => $job->getPosition()
+				'position' => $job->getPositionSlug()
 			));
         }
 
@@ -88,11 +88,11 @@ class JobController extends Controller
         ));
     }
 
-    public function previewAction(Job $job)
+    public function previewAction($token)
     {
 		$em = $this->getDoctrine()->getManager();	
 			
-		$job_check = $em->getRepository('EnsJobeetBundle:Job')->findOneByToken($job->getToken());
+		$job_check = $em->getRepository('EnsJobeetBundle:Job')->findOneByToken($token);
 		
 		if (!$job_check) {
         	throw $this->createNotFoundException('That job was not found');
@@ -131,10 +131,10 @@ class JobController extends Controller
 		}
 		
 		return $this->redirect($this->generateUrl('ens_job_preview', array(
-			'company' => $job_check->getCompany(),
-			'location' => $job_check->getLocation(),
+			'company' => $job_check->getCompanySlug(),
+			'location' => $job_check->getLocationSlug(),
 			'token' => $job_check->getToken(),
-			'position' => $job_check->getPosition()
+			'position' => $job_check->getPositionSlug()
 		)));
 	}
 	
