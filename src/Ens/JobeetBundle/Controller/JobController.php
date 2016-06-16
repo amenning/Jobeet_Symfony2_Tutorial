@@ -188,20 +188,24 @@ class JobController extends Controller
      * Deletes a Job entity.
      *
      */
-    public function deleteAction(Request $request, Job $job)
+    public function deleteAction($token, Request $request)
     {
+        $em = $this->getDoctrine()->getManager();	
+		$job = $em->getRepository('EnsJobeetBundle:Job')->findOneByToken($token);
         $form = $this->createDeleteForm($job);
         $form->handleRequest($request);
-
+		
+		var_dump("test");
+		
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             
-            $job_check = $em->getRepository('EnsJobeetBundle:Job')->findOneByToken($job->getToken());
+            $job_check = $em->getRepository('EnsJobeetBundle:Job')->findOneByToken($token);
 		
 			if (!$job_check) {
         		throw $this->createNotFoundException('Unable to find job entity.');
     		}	
-            
+            var_dump("test2");
             $em->remove($job_check);
             $em->flush();
         }
@@ -220,7 +224,7 @@ class JobController extends Controller
     {
         return $this->createFormBuilder(array('token' => $job->getToken()))
             ->setAction($this->generateUrl('ens_job_delete', array('token' => $job->getToken())))
-            ->setMethod('DELETE')
+            ->setMethod('POST')
             ->getForm()
         ;
     }
