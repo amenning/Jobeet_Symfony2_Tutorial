@@ -36,3 +36,8 @@ ens_job_publish:
     path:     /{token}/publish
     defaults: {_controller:"EnsJobeetBundle:Job:publish" }
     methods:  POST
+    
+ens_job_extend:
+    path:     /{token}/extend
+    defaults: { _controller:"EnsJobeetBundle:Job:extend" }
+    methods:  POST

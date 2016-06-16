@@ -100,11 +100,13 @@ class JobController extends Controller
 		        	
         $deleteForm = $this->createDeleteForm($job_check);
 		$publishForm = $this->createPublishForm($job_check);
+		$extendForm = $this->createExtendForm($job_check->getToken());
 
         return $this->render('job/show.html.twig', array(
             'job' => $job_check,
             'delete_form' => $deleteForm->createView(),
             'publish_form' => $publishForm->createView(),
+            'extend_form' => $extendForm->createView(),
         ));
     }
 	
@@ -229,4 +231,44 @@ class JobController extends Controller
             ->getForm()
         ;
     }
+	
+	public function extendAction($token)
+	{
+		$form = $this->createExtendForm($token);
+		$request = $this->getRequest();
+		$form->handleRequest($request);
+		
+		if ($form->isSubmitted() && $form->isValid()) {
+			$em = $this->getDoctrine()->getManager();
+			$job = $em->getRepository('EnsJobeetBundle:Job')->findOneByToken($token);
+			
+			if(!$job) {
+				throw $this->createNotFoundException('Unable to find job entity.');
+			}
+			
+			if(!$job->extend()) {
+				throw $this->createNotFoundException('Unable to find extend the Job.');
+			}
+			
+			$em->persist($job);
+			$em->flush();
+			
+			$this->get('session')->getFlashBag()->add('notice', 'Your job validity has been extended until %s.', $job->getExpiresAt()->format('m/d/Y'));
+		}
+		
+		return $this->redirect($this->generateUrl('ens_job_preview', array(
+			'company'	=>	$job->getCompanySlug(),
+			'location'	=>	$job->getLocationSlug(),
+			'token'		=>	$job->getToken(),
+			'position'	=>	$job->getPositionSlug()
+		)));
+	}
+	
+	private function createExtendForm($token)
+	{
+		return $this->createFormBuilder(array('token' => $token))
+			->add('token', 'hidden')
+			->getForm()
+		;
+	}
 }

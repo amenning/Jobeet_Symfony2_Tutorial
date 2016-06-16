@@ -187,6 +187,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             }
             not_ens_job_publish:
 
+            // ens_job_extend
+            if (preg_match('#^/job/(?P<token>[^/]++)/extend$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'POST') {
+                    $allow[] = 'POST';
+                    goto not_ens_job_extend;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'ens_job_extend')), array (  '_controller' => 'Ens\\JobeetBundle\\Controller\\JobController::extendAction',));
+            }
+            not_ens_job_extend:
+
         }
 
         // ens_jobeet_homepage
