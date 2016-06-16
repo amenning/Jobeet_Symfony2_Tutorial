@@ -150,3 +150,14 @@ cc41c7,127.0.0.1,POST,http://jobeet.local/app_dev.php/job/5690a5588bb37e5ce1cb26
 761628,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/,1466035702,,200
 920abd,127.0.0.1,POST,http://jobeet.local/app_dev.php/job/5690a5588bb37e5ce1cb26606b6a9300d8e8b11d/delete,1466035778,,302
 d6e8ea,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/,1466035779,,200
+ee4ac6,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/new,1466036777,,200
+1e3446,127.0.0.1,POST,http://jobeet.local/app_dev.php/job/new,1466036794,,302
+ea0d3e,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/test/test/10e6b184f6057bfb27572e49ce0ffb53981db4e8/test,1466036794,,200
+2e70f3,127.0.0.1,POST,http://jobeet.local/app_dev.php/job/10e6b184f6057bfb27572e49ce0ffb53981db4e8/publish,1466036800,,302
+2d676c,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/test/test/10e6b184f6057bfb27572e49ce0ffb53981db4e8/test,1466036803,,200
+9f92f0,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/,1466036807,,200
+f00285,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/test/test/143/test,1466036813,,200
+8cb290,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/10e6b184f6057bfb27572e49ce0ffb53981db4e8/edit,1466036818,,200
+22a2c9,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/extreme-sensio/paris-france/2/web-designer,1466037058,,200
+66ea96,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/job_extreme_sensio/edit,1466037061,ff4237,200
+ff4237,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/job_extreme_sensio/edit,1466037061,,404

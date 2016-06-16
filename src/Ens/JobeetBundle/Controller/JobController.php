@@ -160,6 +160,10 @@ class JobController extends Controller
         	throw $this->createNotFoundException('Unable to find job entity.');
     	}	
 		
+		if($job_check->getIsActivated()) {
+			throw $this->createNotFoundException('Job is activated and cannot be edited.');
+		}
+		
         $deleteForm = $this->createDeleteForm($job);
         $editForm = $this->createForm('Ens\JobeetBundle\Form\JobType', $job);
         $editForm->handleRequest($request);
@@ -195,8 +199,6 @@ class JobController extends Controller
         $form = $this->createDeleteForm($job);
         $form->handleRequest($request);
 		
-		var_dump("test");
-		
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             
@@ -205,7 +207,6 @@ class JobController extends Controller
 			if (!$job_check) {
         		throw $this->createNotFoundException('Unable to find job entity.');
     		}	
-            var_dump("test2");
             $em->remove($job_check);
             $em->flush();
         }
