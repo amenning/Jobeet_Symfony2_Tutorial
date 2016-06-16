@@ -161,3 +161,7 @@ f00285,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/test/test/143/test,1466
 22a2c9,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/extreme-sensio/paris-france/2/web-designer,1466037058,,200
 66ea96,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/job_extreme_sensio/edit,1466037061,ff4237,200
 ff4237,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/job_extreme_sensio/edit,1466037061,,404
+4b9e82,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/extreme-sensio/paris-france/2/web-designer,1466037333,,200
+dd4e52,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/new,1466037349,,200
+dc2101,127.0.0.1,POST,http://jobeet.local/app_dev.php/job/new,1466037366,,302
+84690d,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/f/f/c179d919f701905428fe3a441acb3b8faa27784d/f,1466037367,,200
