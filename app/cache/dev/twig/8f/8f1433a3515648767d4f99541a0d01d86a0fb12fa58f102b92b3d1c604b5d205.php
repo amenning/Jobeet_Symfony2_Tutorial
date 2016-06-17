@@ -21,20 +21,20 @@ class __TwigTemplate_a79d771a2d6835bf86f46529c4df8641f716464eef8e5e5c837d43ea19b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_03c63362d764d309f775e6bb416ad13a676ccab5c4e3512d8b72299a0943a29b = $this->env->getExtension("native_profiler");
-        $__internal_03c63362d764d309f775e6bb416ad13a676ccab5c4e3512d8b72299a0943a29b->enter($__internal_03c63362d764d309f775e6bb416ad13a676ccab5c4e3512d8b72299a0943a29b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:Block:block_rss_dashboard.html.twig"));
+        $__internal_9d0d4eb2e340f65b1f95751b8afa602121ee9b2b1a2404d3cce3b9d932e35b7b = $this->env->getExtension("native_profiler");
+        $__internal_9d0d4eb2e340f65b1f95751b8afa602121ee9b2b1a2404d3cce3b9d932e35b7b->enter($__internal_9d0d4eb2e340f65b1f95751b8afa602121ee9b2b1a2404d3cce3b9d932e35b7b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:Block:block_rss_dashboard.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_03c63362d764d309f775e6bb416ad13a676ccab5c4e3512d8b72299a0943a29b->leave($__internal_03c63362d764d309f775e6bb416ad13a676ccab5c4e3512d8b72299a0943a29b_prof);
+        $__internal_9d0d4eb2e340f65b1f95751b8afa602121ee9b2b1a2404d3cce3b9d932e35b7b->leave($__internal_9d0d4eb2e340f65b1f95751b8afa602121ee9b2b1a2404d3cce3b9d932e35b7b_prof);
 
     }
 
     // line 14
     public function block_block($context, array $blocks = array())
     {
-        $__internal_9c70204b42145bb6d1edd4168cc41de144e8c3459c05c1508ea14f9af2a2d776 = $this->env->getExtension("native_profiler");
-        $__internal_9c70204b42145bb6d1edd4168cc41de144e8c3459c05c1508ea14f9af2a2d776->enter($__internal_9c70204b42145bb6d1edd4168cc41de144e8c3459c05c1508ea14f9af2a2d776_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "block"));
+        $__internal_1e0a17948ee288858e64638cb729a98eadb78ed344b8cb05f229189dc21b14be = $this->env->getExtension("native_profiler");
+        $__internal_1e0a17948ee288858e64638cb729a98eadb78ed344b8cb05f229189dc21b14be->enter($__internal_1e0a17948ee288858e64638cb729a98eadb78ed344b8cb05f229189dc21b14be_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "block"));
 
         // line 15
         echo "    <div class=\"box box-warning\">
@@ -83,7 +83,7 @@ class __TwigTemplate_a79d771a2d6835bf86f46529c4df8641f716464eef8e5e5c837d43ea19b
     </div>
 ";
         
-        $__internal_9c70204b42145bb6d1edd4168cc41de144e8c3459c05c1508ea14f9af2a2d776->leave($__internal_9c70204b42145bb6d1edd4168cc41de144e8c3459c05c1508ea14f9af2a2d776_prof);
+        $__internal_1e0a17948ee288858e64638cb729a98eadb78ed344b8cb05f229189dc21b14be->leave($__internal_1e0a17948ee288858e64638cb729a98eadb78ed344b8cb05f229189dc21b14be_prof);
 
     }
 

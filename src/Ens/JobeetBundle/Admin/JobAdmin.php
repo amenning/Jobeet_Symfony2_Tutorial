@@ -8,6 +8,7 @@ use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\CoreBundle\Validator\ErrorElement;
 use Sonata\AdminBundle\Form\FormMapper;
+use Sonata\AdminBundle\Show\ShowMapper;
 use Ens\JobeetBundle\Entity\Job;
 
 class JobAdmin extends Admin
@@ -71,13 +72,13 @@ class JobAdmin extends Admin
 		;
 	}
 	
-	protected function configureShowField(ShowMapper $showMapper)
+	protected function configureShowFields(ShowMapper $showMapper)
 	{
 		$showMapper
 			->add('category')
 			->add('type')
 			->add('company')
-			->add('webPath', 'string', array('templates' => 'EnsJobeetBundle:JobAdmin:list_image.html.twig'))
+			->add('webPath', 'string', array('template' => 'EnsJobeetBundle:JobAdmin:list_image.html.twig'))
 			->add('url')
 			->add('position')
 			->add('location')
