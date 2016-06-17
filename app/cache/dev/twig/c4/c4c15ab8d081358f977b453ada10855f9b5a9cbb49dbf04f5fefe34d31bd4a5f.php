@@ -20,26 +20,26 @@ class __TwigTemplate_ac455879854ec9da1199750987d707ca69429155c55f92e8be0af966442
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_cf8b150171c1909323125a6519740d9ef693ac1d44c3e5ad85aaf462e1cb10b8 = $this->env->getExtension("native_profiler");
-        $__internal_cf8b150171c1909323125a6519740d9ef693ac1d44c3e5ad85aaf462e1cb10b8->enter($__internal_cf8b150171c1909323125a6519740d9ef693ac1d44c3e5ad85aaf462e1cb10b8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SonataAdmin/CRUD/list_email.html.twig"));
+        $__internal_4813918bb7a66341a698ef8016425e1d66fa02b346c540906cf4c357f36a65b2 = $this->env->getExtension("native_profiler");
+        $__internal_4813918bb7a66341a698ef8016425e1d66fa02b346c540906cf4c357f36a65b2->enter($__internal_4813918bb7a66341a698ef8016425e1d66fa02b346c540906cf4c357f36a65b2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SonataAdmin/CRUD/list_email.html.twig"));
 
         $this->getParent($context)->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_cf8b150171c1909323125a6519740d9ef693ac1d44c3e5ad85aaf462e1cb10b8->leave($__internal_cf8b150171c1909323125a6519740d9ef693ac1d44c3e5ad85aaf462e1cb10b8_prof);
+        $__internal_4813918bb7a66341a698ef8016425e1d66fa02b346c540906cf4c357f36a65b2->leave($__internal_4813918bb7a66341a698ef8016425e1d66fa02b346c540906cf4c357f36a65b2_prof);
 
     }
 
     // line 14
     public function block_field($context, array $blocks = array())
     {
-        $__internal_0aeb7028c80faa0cfe3acab4f7c2cd8c2bc41058e75256ad861d77146e45fb10 = $this->env->getExtension("native_profiler");
-        $__internal_0aeb7028c80faa0cfe3acab4f7c2cd8c2bc41058e75256ad861d77146e45fb10->enter($__internal_0aeb7028c80faa0cfe3acab4f7c2cd8c2bc41058e75256ad861d77146e45fb10_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "field"));
+        $__internal_7282e41a733391000b89b30ee327c5029a89f3ceb4bfacbe4b799d6c3cfb40ae = $this->env->getExtension("native_profiler");
+        $__internal_7282e41a733391000b89b30ee327c5029a89f3ceb4bfacbe4b799d6c3cfb40ae->enter($__internal_7282e41a733391000b89b30ee327c5029a89f3ceb4bfacbe4b799d6c3cfb40ae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "field"));
 
         // line 15
         echo "    ";
         $this->loadTemplate("SonataAdminBundle:CRUD:_email_link.html.twig", "@SonataAdmin/CRUD/list_email.html.twig", 15)->display($context);
         
-        $__internal_0aeb7028c80faa0cfe3acab4f7c2cd8c2bc41058e75256ad861d77146e45fb10->leave($__internal_0aeb7028c80faa0cfe3acab4f7c2cd8c2bc41058e75256ad861d77146e45fb10_prof);
+        $__internal_7282e41a733391000b89b30ee327c5029a89f3ceb4bfacbe4b799d6c3cfb40ae->leave($__internal_7282e41a733391000b89b30ee327c5029a89f3ceb4bfacbe4b799d6c3cfb40ae_prof);
 
     }
 
