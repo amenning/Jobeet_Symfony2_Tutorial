@@ -19,6 +19,11 @@ class JobAdmin extends Admin
 		'_sort_by' => 'created_at'
 	);
 	
+	public function configureOptions(OptionsResolver $resolver)
+	{
+	    $resolver->setDefault('translation_domain', 'messages');
+	}	
+	
 	protected function configureFormFields(FormMapper $formMapper)
 	{
 		$formMapper
