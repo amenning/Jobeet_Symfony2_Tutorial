@@ -9,3 +9,9 @@ ddd1b7,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/?_format=atom,146636502
 97ef3c,127.0.0.1,GET,http://jobeet.local/app_dev.php/category/design?_format=atom,1466365032,1aaeb6,200
 1aaeb6,127.0.0.1,GET,http://jobeet.local/app_dev.php/category/design?_format=atom,1466365032,,500
 7fe08b,127.0.0.1,GET,http://jobeet.local/app_dev.php/category/design?_format=atom,1466365055,,200
+a1d4f9,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/new,1466365566,,200
+c525e8,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/,1466365569,9b384c,200
+9b384c,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/,1466365569,,500
+72c6a8,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/,1466365579,ed82af,200
+ed82af,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/,1466365579,,500
+005b4d,127.0.0.1,GET,http://jobeet.local/app_dev.php/job/,1466365613,,200
