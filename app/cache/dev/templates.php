@@ -257,6 +257,7 @@
   'WebProfilerBundle:Profiler:toolbar_redirect.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views/Profiler/toolbar_redirect.html.twig',
   'WebProfilerBundle:Router:panel.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views/Router/panel.html.twig',
   '::base.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/base.html.twig',
+  ':category:show.atom.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/category/show.atom.twig',
   ':default:index.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/default/index.html.twig',
   ':job:edit.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/job/edit.html.twig',
   ':job:index.atom.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\app/Resources\\views/job/index.atom.twig',

@@ -15,8 +15,8 @@ class __TwigTemplate_da2f2313e26c09aa9e2728fe562283075161ac16b83041e3bdc640a2efc
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b272d1a2276350785002d675fd1fd952d607d78abb8aaf8fae58ed0027f1b245 = $this->env->getExtension("native_profiler");
-        $__internal_b272d1a2276350785002d675fd1fd952d607d78abb8aaf8fae58ed0027f1b245->enter($__internal_b272d1a2276350785002d675fd1fd952d607d78abb8aaf8fae58ed0027f1b245_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SonataAdmin/CRUD/_email_link.html.twig"));
+        $__internal_0b8bd270307a7da99cfe49ea0c0cb8688f7028cc834c7d072f72b2652ff914aa = $this->env->getExtension("native_profiler");
+        $__internal_0b8bd270307a7da99cfe49ea0c0cb8688f7028cc834c7d072f72b2652ff914aa->enter($__internal_0b8bd270307a7da99cfe49ea0c0cb8688f7028cc834c7d072f72b2652ff914aa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SonataAdmin/CRUD/_email_link.html.twig"));
 
         // line 2
         if (twig_test_empty((isset($context["value"]) ? $context["value"] : $this->getContext($context, "value")))) {
@@ -71,7 +71,7 @@ class __TwigTemplate_da2f2313e26c09aa9e2728fe562283075161ac16b83041e3bdc640a2efc
             echo "</a>";
         }
         
-        $__internal_b272d1a2276350785002d675fd1fd952d607d78abb8aaf8fae58ed0027f1b245->leave($__internal_b272d1a2276350785002d675fd1fd952d607d78abb8aaf8fae58ed0027f1b245_prof);
+        $__internal_0b8bd270307a7da99cfe49ea0c0cb8688f7028cc834c7d072f72b2652ff914aa->leave($__internal_0b8bd270307a7da99cfe49ea0c0cb8688f7028cc834c7d072f72b2652ff914aa_prof);
 
     }
 

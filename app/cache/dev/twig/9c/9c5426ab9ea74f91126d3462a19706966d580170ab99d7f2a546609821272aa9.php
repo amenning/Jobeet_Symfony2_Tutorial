@@ -23,20 +23,20 @@ class __TwigTemplate_76fb8818cb597a80965381507e11561ecb30497bd76020a4023c374ce82
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3983fc3e93cc75ab5a0b8c150e3411d8f26579aa23290d74c2104ba77c0a3458 = $this->env->getExtension("native_profiler");
-        $__internal_3983fc3e93cc75ab5a0b8c150e3411d8f26579aa23290d74c2104ba77c0a3458->enter($__internal_3983fc3e93cc75ab5a0b8c150e3411d8f26579aa23290d74c2104ba77c0a3458_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EnsJobeetBundle:category:show.html.twig"));
+        $__internal_8ce3cde6dfe5cbdfe306d3ef8c58104605a4b233d52f00bd0d6a3f346cda8292 = $this->env->getExtension("native_profiler");
+        $__internal_8ce3cde6dfe5cbdfe306d3ef8c58104605a4b233d52f00bd0d6a3f346cda8292->enter($__internal_8ce3cde6dfe5cbdfe306d3ef8c58104605a4b233d52f00bd0d6a3f346cda8292_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "EnsJobeetBundle:category:show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_3983fc3e93cc75ab5a0b8c150e3411d8f26579aa23290d74c2104ba77c0a3458->leave($__internal_3983fc3e93cc75ab5a0b8c150e3411d8f26579aa23290d74c2104ba77c0a3458_prof);
+        $__internal_8ce3cde6dfe5cbdfe306d3ef8c58104605a4b233d52f00bd0d6a3f346cda8292->leave($__internal_8ce3cde6dfe5cbdfe306d3ef8c58104605a4b233d52f00bd0d6a3f346cda8292_prof);
 
     }
 
     // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_2ada1956d8c58c6e3dda0078df00521f1643ba719d4661d2d7c755c07980a83c = $this->env->getExtension("native_profiler");
-        $__internal_2ada1956d8c58c6e3dda0078df00521f1643ba719d4661d2d7c755c07980a83c->enter($__internal_2ada1956d8c58c6e3dda0078df00521f1643ba719d4661d2d7c755c07980a83c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_8d17d7bd3c7e17fb84f2bfc3ed8103fedd0b0ce5a17fc832ad7bab0c0641dcdd = $this->env->getExtension("native_profiler");
+        $__internal_8d17d7bd3c7e17fb84f2bfc3ed8103fedd0b0ce5a17fc832ad7bab0c0641dcdd->enter($__internal_8d17d7bd3c7e17fb84f2bfc3ed8103fedd0b0ce5a17fc832ad7bab0c0641dcdd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 4
         echo "  Jobs in the ";
@@ -44,15 +44,15 @@ class __TwigTemplate_76fb8818cb597a80965381507e11561ecb30497bd76020a4023c374ce82
         echo " category
 ";
         
-        $__internal_2ada1956d8c58c6e3dda0078df00521f1643ba719d4661d2d7c755c07980a83c->leave($__internal_2ada1956d8c58c6e3dda0078df00521f1643ba719d4661d2d7c755c07980a83c_prof);
+        $__internal_8d17d7bd3c7e17fb84f2bfc3ed8103fedd0b0ce5a17fc832ad7bab0c0641dcdd->leave($__internal_8d17d7bd3c7e17fb84f2bfc3ed8103fedd0b0ce5a17fc832ad7bab0c0641dcdd_prof);
 
     }
 
     // line 7
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_65eadb4cb5a84b21030a71ea00dff5037988df43dc9ef5d5d9d1c073f9be4c1d = $this->env->getExtension("native_profiler");
-        $__internal_65eadb4cb5a84b21030a71ea00dff5037988df43dc9ef5d5d9d1c073f9be4c1d->enter($__internal_65eadb4cb5a84b21030a71ea00dff5037988df43dc9ef5d5d9d1c073f9be4c1d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_c43c04c11161c3ed72d4cefc530afc73ab655783946cf4c129d88c7fd26e0227 = $this->env->getExtension("native_profiler");
+        $__internal_c43c04c11161c3ed72d4cefc530afc73ab655783946cf4c129d88c7fd26e0227->enter($__internal_c43c04c11161c3ed72d4cefc530afc73ab655783946cf4c129d88c7fd26e0227_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 8
         echo "  ";
@@ -64,20 +64,23 @@ class __TwigTemplate_76fb8818cb597a80965381507e11561ecb30497bd76020a4023c374ce82
         echo "\" type=\"text/css\" media=\"all\" />
 ";
         
-        $__internal_65eadb4cb5a84b21030a71ea00dff5037988df43dc9ef5d5d9d1c073f9be4c1d->leave($__internal_65eadb4cb5a84b21030a71ea00dff5037988df43dc9ef5d5d9d1c073f9be4c1d_prof);
+        $__internal_c43c04c11161c3ed72d4cefc530afc73ab655783946cf4c129d88c7fd26e0227->leave($__internal_c43c04c11161c3ed72d4cefc530afc73ab655783946cf4c129d88c7fd26e0227_prof);
 
     }
 
     // line 12
     public function block_body($context, array $blocks = array())
     {
-        $__internal_881406f2af316130d8cb79bcd6ee694b0e562e9a4e5f83ad1cf40830c3fce925 = $this->env->getExtension("native_profiler");
-        $__internal_881406f2af316130d8cb79bcd6ee694b0e562e9a4e5f83ad1cf40830c3fce925->enter($__internal_881406f2af316130d8cb79bcd6ee694b0e562e9a4e5f83ad1cf40830c3fce925_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_c4ab54db2f85c0add89e640d4866279cfd5321b896870c3389bc2c8a01f062e8 = $this->env->getExtension("native_profiler");
+        $__internal_c4ab54db2f85c0add89e640d4866279cfd5321b896870c3389bc2c8a01f062e8->enter($__internal_c4ab54db2f85c0add89e640d4866279cfd5321b896870c3389bc2c8a01f062e8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 13
         echo "  <div class=\"category\">
     <div class=\"feed\">
-      <a href=\"\">Feed</a>
+      <a href=\"";
+        // line 15
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("EnsJobeetBundle_category", array("slug" => $this->getAttribute((isset($context["category"]) ? $context["category"] : $this->getContext($context, "category")), "slug", array()), "_format" => "atom")), "html", null, true);
+        echo "\">Feed</a>
     </div>
     <h1>";
         // line 17
@@ -190,7 +193,7 @@ class __TwigTemplate_76fb8818cb597a80965381507e11561ecb30497bd76020a4023c374ce82
         echo "  </div>
 ";
         
-        $__internal_881406f2af316130d8cb79bcd6ee694b0e562e9a4e5f83ad1cf40830c3fce925->leave($__internal_881406f2af316130d8cb79bcd6ee694b0e562e9a4e5f83ad1cf40830c3fce925_prof);
+        $__internal_c4ab54db2f85c0add89e640d4866279cfd5321b896870c3389bc2c8a01f062e8->leave($__internal_c4ab54db2f85c0add89e640d4866279cfd5321b896870c3389bc2c8a01f062e8_prof);
 
     }
 
@@ -206,7 +209,7 @@ class __TwigTemplate_76fb8818cb597a80965381507e11561ecb30497bd76020a4023c374ce82
 
     public function getDebugInfo()
     {
-        return array (  190 => 56,  182 => 54,  180 => 53,  175 => 51,  171 => 49,  164 => 45,  160 => 44,  154 => 41,  150 => 40,  147 => 39,  141 => 38,  133 => 36,  127 => 34,  124 => 33,  120 => 32,  114 => 29,  110 => 28,  104 => 25,  100 => 24,  97 => 23,  95 => 22,  92 => 21,  90 => 20,  84 => 17,  78 => 13,  72 => 12,  63 => 9,  58 => 8,  52 => 7,  42 => 4,  36 => 3,  11 => 1,);
+        return array (  193 => 56,  185 => 54,  183 => 53,  178 => 51,  174 => 49,  167 => 45,  163 => 44,  157 => 41,  153 => 40,  150 => 39,  144 => 38,  136 => 36,  130 => 34,  127 => 33,  123 => 32,  117 => 29,  113 => 28,  107 => 25,  103 => 24,  100 => 23,  98 => 22,  95 => 21,  93 => 20,  87 => 17,  82 => 15,  78 => 13,  72 => 12,  63 => 9,  58 => 8,  52 => 7,  42 => 4,  36 => 3,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -223,7 +226,7 @@ class __TwigTemplate_76fb8818cb597a80965381507e11561ecb30497bd76020a4023c374ce82
 /* {% block body %}*/
 /*   <div class="category">*/
 /*     <div class="feed">*/
-/*       <a href="">Feed</a>*/
+/*       <a href="{{ path('EnsJobeetBundle_category', { 'slug': category.slug, '_format': 'atom' }) }}">Feed</a>*/
 /*     </div>*/
 /*     <h1>{{ category.name }}</h1>*/
 /*   </div>*/

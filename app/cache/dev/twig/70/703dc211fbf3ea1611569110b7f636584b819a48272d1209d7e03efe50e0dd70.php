@@ -15,8 +15,8 @@ class __TwigTemplate_0119406186248767b806c691d24b437b7c2b447a3ab1ffbfc52ed82e064
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7d21b786653c8adfb447868eb48aa4c39211dc1e53d27126606ea09c9b72e4e4 = $this->env->getExtension("native_profiler");
-        $__internal_7d21b786653c8adfb447868eb48aa4c39211dc1e53d27126606ea09c9b72e4e4->enter($__internal_7d21b786653c8adfb447868eb48aa4c39211dc1e53d27126606ea09c9b72e4e4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":job:index.atom.twig"));
+        $__internal_2bf65810801e5f18db0c9e94fa60e62d4bf81d1ccd6df94d174cfc73a36cf5da = $this->env->getExtension("native_profiler");
+        $__internal_2bf65810801e5f18db0c9e94fa60e62d4bf81d1ccd6df94d174cfc73a36cf5da->enter($__internal_2bf65810801e5f18db0c9e94fa60e62d4bf81d1ccd6df94d174cfc73a36cf5da_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":job:index.atom.twig"));
 
         // line 1
         echo "<!-- src/Ens/JobeetBundle/Resources/views/Job/index.atom.twig -->
@@ -30,7 +30,7 @@ class __TwigTemplate_0119406186248767b806c691d24b437b7c2b447a3ab1ffbfc52ed82e064
         echo "\" rel=\"self\" />
 \t<link href=\"";
         // line 7
-        echo $this->env->getExtension('routing')->getUrl("EnsJobeetBundle_homepage");
+        echo $this->env->getExtension('routing')->getUrl("ens_jobeet_homepage");
         echo "\" />
 \t<updated>";
         // line 8
@@ -126,7 +126,7 @@ class __TwigTemplate_0119406186248767b806c691d24b437b7c2b447a3ab1ffbfc52ed82e064
         // line 39
         echo "</feed>";
         
-        $__internal_7d21b786653c8adfb447868eb48aa4c39211dc1e53d27126606ea09c9b72e4e4->leave($__internal_7d21b786653c8adfb447868eb48aa4c39211dc1e53d27126606ea09c9b72e4e4_prof);
+        $__internal_2bf65810801e5f18db0c9e94fa60e62d4bf81d1ccd6df94d174cfc73a36cf5da->leave($__internal_2bf65810801e5f18db0c9e94fa60e62d4bf81d1ccd6df94d174cfc73a36cf5da_prof);
 
     }
 
@@ -151,7 +151,7 @@ class __TwigTemplate_0119406186248767b806c691d24b437b7c2b447a3ab1ffbfc52ed82e064
 /* 	<title>Jobeet</title>*/
 /* 	<subtitle>Latest Jobs</subtitle>*/
 /* 	<link href="{{ url('ens_job_index', {'_format': 'atom'}) }}" rel="self" />*/
-/* 	<link href="{{ url('EnsJobeetBundle_homepage') }}" />*/
+/* 	<link href="{{ url('ens_jobeet_homepage') }}" />*/
 /* 	<updated>{{ lastUpdated }}</updated>*/
 /* 	<author><name>Jobeet</name></author>*/
 /* 	<id>{{ feedId }}</id>*/
