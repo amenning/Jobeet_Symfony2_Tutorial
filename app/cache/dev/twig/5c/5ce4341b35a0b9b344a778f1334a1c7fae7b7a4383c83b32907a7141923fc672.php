@@ -15,8 +15,8 @@ class __TwigTemplate_c66d091be0ae7de011284451d83a1a7425d63c4df2669b415ec86dbc5fb
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9318bf9debea1d80cf3e124f43fd71c6e0344c363fe97a60d8cf0a6b642056a1 = $this->env->getExtension("native_profiler");
-        $__internal_9318bf9debea1d80cf3e124f43fd71c6e0344c363fe97a60d8cf0a6b642056a1->enter($__internal_9318bf9debea1d80cf3e124f43fd71c6e0344c363fe97a60d8cf0a6b642056a1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataDoctrineORMAdminBundle:CRUD:edit_orm_many_to_many.html.twig"));
+        $__internal_cd873c5380bef0de7b47f14d22e1e8ec29c9b2a5e322087d9c466d05e5df2949 = $this->env->getExtension("native_profiler");
+        $__internal_cd873c5380bef0de7b47f14d22e1e8ec29c9b2a5e322087d9c466d05e5df2949->enter($__internal_cd873c5380bef0de7b47f14d22e1e8ec29c9b2a5e322087d9c466d05e5df2949_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataDoctrineORMAdminBundle:CRUD:edit_orm_many_to_many.html.twig"));
 
         // line 11
         if ($this->getAttribute($this->getAttribute((isset($context["sonata_admin"]) ? $context["sonata_admin"] : $this->getContext($context, "sonata_admin")), "field_description", array()), "hasassociationadmin", array())) {
@@ -336,7 +336,7 @@ class __TwigTemplate_c66d091be0ae7de011284451d83a1a7425d63c4df2669b415ec86dbc5fb
 ";
         }
         
-        $__internal_9318bf9debea1d80cf3e124f43fd71c6e0344c363fe97a60d8cf0a6b642056a1->leave($__internal_9318bf9debea1d80cf3e124f43fd71c6e0344c363fe97a60d8cf0a6b642056a1_prof);
+        $__internal_cd873c5380bef0de7b47f14d22e1e8ec29c9b2a5e322087d9c466d05e5df2949->leave($__internal_cd873c5380bef0de7b47f14d22e1e8ec29c9b2a5e322087d9c466d05e5df2949_prof);
 
     }
 

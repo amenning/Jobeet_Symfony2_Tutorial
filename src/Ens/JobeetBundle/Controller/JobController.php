@@ -4,6 +4,7 @@ namespace Ens\JobeetBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 use Ens\JobeetBundle\Entity\Job;
 use Ens\JobeetBundle\Form\JobType;
@@ -79,7 +80,23 @@ class JobController extends Controller
 		if (!$job_check) {
         	throw $this->createNotFoundException('That job was not found');
     	}
-		        	
+		
+		$session = $this->getRequest()->getSession();
+		
+		// fetch jobs already stored in the job history
+		$jobs = $session->get('job_history', array());
+		
+		// store the job as an array so we can put it in the session and avoid entity serialize errors
+		$job = array('id' => $job_check->getId(), 'position' =>$job_check->getPosition(), 'company' =>$job_check->getCompany(), 'companyslug' =>$job_check->getCompanySlug(), 'locationslug' =>$job_check->getLocationSlug(), 'positionslug' =>$job_check->getPositionSlug());
+
+		if (!in_array($job, $jobs)) {
+			// add the current job at the beginning of the array
+			array_unshift($jobs, $job);
+			
+			// store the new job history back into the session
+			$session->set('job_history', array_slice($jobs, 0, 3));
+		}
+        	
         $deleteForm = $this->createDeleteForm($job_check);
 
         return $this->render('job/show.html.twig', array(

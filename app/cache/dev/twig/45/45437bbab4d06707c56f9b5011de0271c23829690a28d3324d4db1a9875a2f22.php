@@ -16,23 +16,26 @@ class __TwigTemplate_09c9aa40ce0aa8096872b74aded3047813739c2bb926665686911ca49b3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_193ffb7a6ba2df5f2abac4455dabc8a4f772eec7dd33f7d023a5d0a38963594e = $this->env->getExtension("native_profiler");
-        $__internal_193ffb7a6ba2df5f2abac4455dabc8a4f772eec7dd33f7d023a5d0a38963594e->enter($__internal_193ffb7a6ba2df5f2abac4455dabc8a4f772eec7dd33f7d023a5d0a38963594e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SonataAdmin/Core/user_block.html.twig"));
+        $__internal_73079cd3bb6597fccd26531cf859a355c66a5dff50593f982a79d92386819857 = $this->env->getExtension("native_profiler");
+        $__internal_73079cd3bb6597fccd26531cf859a355c66a5dff50593f982a79d92386819857->enter($__internal_73079cd3bb6597fccd26531cf859a355c66a5dff50593f982a79d92386819857_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SonataAdmin/Core/user_block.html.twig"));
 
         // line 1
         $this->displayBlock('user_block', $context, $blocks);
         
-        $__internal_193ffb7a6ba2df5f2abac4455dabc8a4f772eec7dd33f7d023a5d0a38963594e->leave($__internal_193ffb7a6ba2df5f2abac4455dabc8a4f772eec7dd33f7d023a5d0a38963594e_prof);
+        $__internal_73079cd3bb6597fccd26531cf859a355c66a5dff50593f982a79d92386819857->leave($__internal_73079cd3bb6597fccd26531cf859a355c66a5dff50593f982a79d92386819857_prof);
 
     }
 
     public function block_user_block($context, array $blocks = array())
     {
-        $__internal_4eeb7d459b7475fcc86a85d5c50d88f0112ac2931273c6bc0602ec0799b38408 = $this->env->getExtension("native_profiler");
-        $__internal_4eeb7d459b7475fcc86a85d5c50d88f0112ac2931273c6bc0602ec0799b38408->enter($__internal_4eeb7d459b7475fcc86a85d5c50d88f0112ac2931273c6bc0602ec0799b38408_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "user_block"));
+        $__internal_55e1f11d610a48eab5b830f87223e7ebdd03719e9fdb3e9116f1dd431f0f27f1 = $this->env->getExtension("native_profiler");
+        $__internal_55e1f11d610a48eab5b830f87223e7ebdd03719e9fdb3e9116f1dd431f0f27f1->enter($__internal_55e1f11d610a48eab5b830f87223e7ebdd03719e9fdb3e9116f1dd431f0f27f1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "user_block"));
 
+        echo "<a href=\"";
+        echo $this->env->getExtension('routing')->getPath("logout");
+        echo "\">Logout</a>";
         
-        $__internal_4eeb7d459b7475fcc86a85d5c50d88f0112ac2931273c6bc0602ec0799b38408->leave($__internal_4eeb7d459b7475fcc86a85d5c50d88f0112ac2931273c6bc0602ec0799b38408_prof);
+        $__internal_55e1f11d610a48eab5b830f87223e7ebdd03719e9fdb3e9116f1dd431f0f27f1->leave($__internal_55e1f11d610a48eab5b830f87223e7ebdd03719e9fdb3e9116f1dd431f0f27f1_prof);
 
     }
 
@@ -46,5 +49,5 @@ class __TwigTemplate_09c9aa40ce0aa8096872b74aded3047813739c2bb926665686911ca49b3
         return array (  23 => 1,);
     }
 }
-/* {% block user_block %}{# Customize this value #}{% endblock %}*/
+/* {% block user_block %}<a href="{{ path('logout') }}">Logout</a>{% endblock %}*/
 /* */

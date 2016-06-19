@@ -21,20 +21,20 @@ class __TwigTemplate_899e9178dcfd6ff5572e1958bae4b4abc888d45c49b5870417125ef5c36
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_43612b5624611f0dddbbcc3264b91b73fa467637927b4ee063891bc6beb41532 = $this->env->getExtension("native_profiler");
-        $__internal_43612b5624611f0dddbbcc3264b91b73fa467637927b4ee063891bc6beb41532->enter($__internal_43612b5624611f0dddbbcc3264b91b73fa467637927b4ee063891bc6beb41532_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataDoctrineORMAdminBundle:CRUD:show_orm_many_to_many.html.twig"));
+        $__internal_6eb2b8f76a1b646e201949dcc85908d92bf642f7002319665ffb8fd0f76846c7 = $this->env->getExtension("native_profiler");
+        $__internal_6eb2b8f76a1b646e201949dcc85908d92bf642f7002319665ffb8fd0f76846c7->enter($__internal_6eb2b8f76a1b646e201949dcc85908d92bf642f7002319665ffb8fd0f76846c7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataDoctrineORMAdminBundle:CRUD:show_orm_many_to_many.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_43612b5624611f0dddbbcc3264b91b73fa467637927b4ee063891bc6beb41532->leave($__internal_43612b5624611f0dddbbcc3264b91b73fa467637927b4ee063891bc6beb41532_prof);
+        $__internal_6eb2b8f76a1b646e201949dcc85908d92bf642f7002319665ffb8fd0f76846c7->leave($__internal_6eb2b8f76a1b646e201949dcc85908d92bf642f7002319665ffb8fd0f76846c7_prof);
 
     }
 
     // line 14
     public function block_field($context, array $blocks = array())
     {
-        $__internal_799ad4731fda7a3b3941c0c5186741a2917541623bc8a80bf323fc2b1e42bd03 = $this->env->getExtension("native_profiler");
-        $__internal_799ad4731fda7a3b3941c0c5186741a2917541623bc8a80bf323fc2b1e42bd03->enter($__internal_799ad4731fda7a3b3941c0c5186741a2917541623bc8a80bf323fc2b1e42bd03_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "field"));
+        $__internal_ba87a65dbe63be8104c7f2b79d74c30655344f1949fd52403083d586c494619f = $this->env->getExtension("native_profiler");
+        $__internal_ba87a65dbe63be8104c7f2b79d74c30655344f1949fd52403083d586c494619f->enter($__internal_ba87a65dbe63be8104c7f2b79d74c30655344f1949fd52403083d586c494619f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "field"));
 
         // line 15
         echo "    <ul class=\"sonata-ba-show-many-to-many\">
@@ -96,7 +96,7 @@ class __TwigTemplate_899e9178dcfd6ff5572e1958bae4b4abc888d45c49b5870417125ef5c36
         echo "    </ul>
 ";
         
-        $__internal_799ad4731fda7a3b3941c0c5186741a2917541623bc8a80bf323fc2b1e42bd03->leave($__internal_799ad4731fda7a3b3941c0c5186741a2917541623bc8a80bf323fc2b1e42bd03_prof);
+        $__internal_ba87a65dbe63be8104c7f2b79d74c30655344f1949fd52403083d586c494619f->leave($__internal_ba87a65dbe63be8104c7f2b79d74c30655344f1949fd52403083d586c494619f_prof);
 
     }
 
