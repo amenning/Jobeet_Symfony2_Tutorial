@@ -15,8 +15,8 @@ class __TwigTemplate_0c018f84bf856a1819439fe40fd1ca217cea5b03d3dedc6c5af94812a4a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_28090f21f7e3bc36e52243010023d97cb57854aafb3b2951d12b6cde9b9f8dd6 = $this->env->getExtension("native_profiler");
-        $__internal_28090f21f7e3bc36e52243010023d97cb57854aafb3b2951d12b6cde9b9f8dd6->enter($__internal_28090f21f7e3bc36e52243010023d97cb57854aafb3b2951d12b6cde9b9f8dd6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:CRUD:dashboard__action.html.twig"));
+        $__internal_5fa1a26826229e9197dc03be93f2ebde8dc9314e49f9bb1e402fabf9705f5035 = $this->env->getExtension("native_profiler");
+        $__internal_5fa1a26826229e9197dc03be93f2ebde8dc9314e49f9bb1e402fabf9705f5035->enter($__internal_5fa1a26826229e9197dc03be93f2ebde8dc9314e49f9bb1e402fabf9705f5035_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:CRUD:dashboard__action.html.twig"));
 
         // line 1
         echo "<a class=\"btn btn-link btn-flat\" href=\"";
@@ -32,7 +32,7 @@ class __TwigTemplate_0c018f84bf856a1819439fe40fd1ca217cea5b03d3dedc6c5af94812a4a
         echo "
 </a>";
         
-        $__internal_28090f21f7e3bc36e52243010023d97cb57854aafb3b2951d12b6cde9b9f8dd6->leave($__internal_28090f21f7e3bc36e52243010023d97cb57854aafb3b2951d12b6cde9b9f8dd6_prof);
+        $__internal_5fa1a26826229e9197dc03be93f2ebde8dc9314e49f9bb1e402fabf9705f5035->leave($__internal_5fa1a26826229e9197dc03be93f2ebde8dc9314e49f9bb1e402fabf9705f5035_prof);
 
     }
 

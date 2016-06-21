@@ -217,6 +217,7 @@
   'SonataDoctrineORMAdminBundle:CRUD:show_orm_one_to_one.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\vendor\\sonata-project\\doctrine-orm-admin-bundle/Resources/views/CRUD/show_orm_one_to_one.html.twig',
   'SonataDoctrineORMAdminBundle:Form:filter_admin_fields.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\vendor\\sonata-project\\doctrine-orm-admin-bundle/Resources/views/Form/filter_admin_fields.html.twig',
   'SonataDoctrineORMAdminBundle:Form:form_admin_fields.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\vendor\\sonata-project\\doctrine-orm-admin-bundle/Resources/views/Form/form_admin_fields.html.twig',
+  'EnsJobeetBundle:category:show.atom.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\src\\Ens\\JobeetBundle/Resources/views/category/show.atom.twig',
   'EnsJobeetBundle:category:show.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\src\\Ens\\JobeetBundle/Resources/views/category/show.html.twig',
   'EnsJobeetBundle:Default:index.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\src\\Ens\\JobeetBundle/Resources/views/Default/index.html.twig',
   'EnsJobeetBundle:Default:login.html.twig' => 'C:\\xampp\\htdocs\\Jobeet_Tutorial\\jobeet\\src\\Ens\\JobeetBundle/Resources/views/Default/login.html.twig',
